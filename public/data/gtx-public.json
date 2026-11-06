@@ -1,12 +1,12 @@
 {
-  "asOf": "2026-11-04",
-  "notice": "공식 자료를 검토한 정적 스냅샷입니다. 자료별 기준일이 서로 다르며 현재 운영 상태를 보장하지 않습니다. 좌표 없는 역은 지도에 표시하지 않습니다.",
+  "asOf": "2026-11-07",
+  "notice": "공식 자료별 기준일을 구분한 정적 스냅샷입니다. 목록·지도 위치·실제 선로의 완전성은 서로 다릅니다. 기존 환승역 참고 좌표를 포함하며, 좌표가 없는 역은 추정하지 않습니다.",
   "routes": [
     {
       "id": "A",
       "name": "GTX-A",
       "route": "운정중앙 ↔ 동탄",
-      "status": "부분 운행 · 중앙 구간 미개통",
+      "status": "운행 자료 기준 · 직결 개통 미확인",
       "color": "#8a4fb0",
       "source": {
         "label": "국가철도공단 GTX-A 사전점검 보도자료",
@@ -102,7 +102,7 @@
         {
           "id": "A-삼성",
           "name": "삼성",
-          "status": "미개통",
+          "status": "개통 계획(자료 기준)",
           "kind": "역",
           "source": {
             "label": "국가철도공단 GTX-A 사전점검 보도자료",
@@ -111,7 +111,8 @@
             "checkedAt": "2026-11-04"
           },
           "coordinate": null,
-          "regionCode": null
+          "regionCode": null,
+          "note": "자료 기준의 미개통·개통 계획이며 조사일 현재 정차 개시를 확인하지 못했습니다."
         },
         {
           "id": "A-수서",
@@ -209,27 +210,15 @@
         },
         {
           "from": "A-대곡",
-          "to": "A-창릉",
-          "status": "운행",
-          "source": {
-            "label": "국가철도공단 GTX-A 사전점검 보도자료",
-            "url": "https://www.kr.or.kr/boardCnts/view.do?boardID=52&boardSeq=1122164&prntBoardID=0&prntBoardSeq=0&prntLev=0",
-            "asOf": "2026-03-03",
-            "checkedAt": "2026-11-04"
-          },
-          "note": "창릉역 정차 개시 여부와 구간 운행은 별개"
-        },
-        {
-          "from": "A-창릉",
           "to": "A-연신내",
           "status": "운행",
           "source": {
-            "label": "국가철도공단 GTX-A 사전점검 보도자료",
-            "url": "https://www.kr.or.kr/boardCnts/view.do?boardID=52&boardSeq=1122164&prntBoardID=0&prntBoardSeq=0&prntLev=0",
-            "asOf": "2026-03-03",
-            "checkedAt": "2026-11-04"
+            "label": "한국교통연구원 민자철도관리지원센터 GTX-A 운정중앙~서울 운영 노선",
+            "url": "https://cppr.koti.re.kr/site/railwyDetail?railwyId=RID241201000022",
+            "asOf": "2024-12-28",
+            "checkedAt": "2026-11-07"
           },
-          "note": "창릉역 정차 개시 여부와 구간 운행은 별개"
+          "note": "운영 자료의 대곡~연신내 운행 구간 개략 연결. 창릉 계획역의 좌표·정차는 반영하지 않으며 실제 선로가 아닙니다."
         },
         {
           "from": "A-연신내",
@@ -245,24 +234,26 @@
         {
           "from": "A-서울역",
           "to": "A-삼성",
-          "status": "미개통",
+          "status": "미상",
           "source": {
             "label": "국가철도공단 GTX-A 사전점검 보도자료",
             "url": "https://www.kr.or.kr/boardCnts/view.do?boardID=52&boardSeq=1122164&prntBoardID=0&prntBoardSeq=0&prntLev=0",
             "asOf": "2026-03-03",
             "checkedAt": "2026-11-04"
-          }
+          },
+          "note": "2026-03-03 연결 계획 자료 기준. 조사일 현재 직결 운행으로의 전환을 확인하지 못했습니다."
         },
         {
           "from": "A-삼성",
           "to": "A-수서",
-          "status": "미개통",
+          "status": "미상",
           "source": {
             "label": "국가철도공단 GTX-A 사전점검 보도자료",
             "url": "https://www.kr.or.kr/boardCnts/view.do?boardID=52&boardSeq=1122164&prntBoardID=0&prntBoardSeq=0&prntLev=0",
             "asOf": "2026-03-03",
             "checkedAt": "2026-11-04"
-          }
+          },
+          "note": "2026-03-03 연결 계획 자료 기준. 조사일 현재 직결 운행으로의 전환을 확인하지 못했습니다."
         },
         {
           "from": "A-수서",
@@ -309,19 +300,35 @@
             "checkedAt": "2026-11-04"
           }
         }
-      ]
+      ],
+      "note": "2026-03-03 자료는 운정중앙~서울역과 수서~동탄의 분리 운행 및 향후 연결 계획을 제시합니다. 조사일 현재 삼성 정차와 서울역~수서 직결 운행으로의 전환을 확인하지 못했으므로 중앙 구간의 현재 상태는 미상으로 표시합니다. 운영사 현재 시간표를 확인하세요. 창릉 계획역의 정차와 구간 운행은 별개입니다.",
+      "coverage": {
+        "checkedAt": "2026-11-07",
+        "listScope": "출처의 본선·지선 역 목록",
+        "listedStations": 11,
+        "mappedStations": 7,
+        "missingCoordinates": [
+          "운정중앙",
+          "킨텍스",
+          "창릉",
+          "동탄"
+        ],
+        "lineGeometry": "검증된 양 끝 역 사이 직선 개략도; 실제 선로 아님",
+        "allListedPositionsAvailable": false,
+        "routeGeometryVerified": false
+      }
     },
     {
       "id": "B",
       "name": "GTX-B",
       "route": "인천대입구 ↔ 마석",
-      "status": "사업 추진 중 · 구간별 상이",
+      "status": "공사 중 · 2026.09 자료",
       "color": "#14897a",
       "source": {
-        "label": "국가철도공단 광역철도 사업현황",
+        "label": "국가철도공단 광역철도 주요사업현황",
         "url": "https://www.kr.or.kr/sub/info.do?m=05010402",
         "asOf": "2026-09",
-        "checkedAt": "2026-11-04"
+        "checkedAt": "2026-11-07"
       },
       "stations": [
         {
@@ -525,155 +532,158 @@
         {
           "from": "B-인천대입구",
           "to": "B-인천시청",
-          "status": "미상",
+          "status": "공사 중",
           "source": {
-            "label": "부천시 GTX-B 사업개요·노선도",
-            "url": "https://bucheon.go.kr/site/homepage/menu/viewMenu?menuid=148006006003005001",
-            "asOf": "2026-04-22",
-            "checkedAt": "2026-11-04"
+            "label": "국가철도공단 광역철도 주요사업현황",
+            "url": "https://www.kr.or.kr/sub/info.do?m=05010402",
+            "asOf": "2026-09",
+            "checkedAt": "2026-11-07"
           },
-          "note": "개별 구간 공정 확인 필요"
+          "note": "2026.09 국가철도공단 사업 구간 현황 기준. 역사별 공정률은 별도 확인되지 않았습니다."
         },
         {
           "from": "B-인천시청",
           "to": "B-부평",
-          "status": "미상",
+          "status": "공사 중",
           "source": {
-            "label": "부천시 GTX-B 사업개요·노선도",
-            "url": "https://bucheon.go.kr/site/homepage/menu/viewMenu?menuid=148006006003005001",
-            "asOf": "2026-04-22",
-            "checkedAt": "2026-11-04"
+            "label": "국가철도공단 광역철도 주요사업현황",
+            "url": "https://www.kr.or.kr/sub/info.do?m=05010402",
+            "asOf": "2026-09",
+            "checkedAt": "2026-11-07"
           },
-          "note": "개별 구간 공정 확인 필요"
+          "note": "2026.09 국가철도공단 사업 구간 현황 기준. 역사별 공정률은 별도 확인되지 않았습니다."
         },
         {
           "from": "B-부평",
           "to": "B-부천종합운동장",
-          "status": "미상",
+          "status": "공사 중",
           "source": {
-            "label": "부천시 GTX-B 사업개요·노선도",
-            "url": "https://bucheon.go.kr/site/homepage/menu/viewMenu?menuid=148006006003005001",
-            "asOf": "2026-04-22",
-            "checkedAt": "2026-11-04"
+            "label": "국가철도공단 광역철도 주요사업현황",
+            "url": "https://www.kr.or.kr/sub/info.do?m=05010402",
+            "asOf": "2026-09",
+            "checkedAt": "2026-11-07"
           },
-          "note": "개별 구간 공정 확인 필요"
+          "note": "2026.09 국가철도공단 사업 구간 현황 기준. 역사별 공정률은 별도 확인되지 않았습니다."
         },
         {
           "from": "B-부천종합운동장",
           "to": "B-신도림",
-          "status": "미상",
+          "status": "공사 중",
           "source": {
-            "label": "부천시 GTX-B 사업개요·노선도",
-            "url": "https://bucheon.go.kr/site/homepage/menu/viewMenu?menuid=148006006003005001",
-            "asOf": "2026-04-22",
-            "checkedAt": "2026-11-04"
+            "label": "국가철도공단 광역철도 주요사업현황",
+            "url": "https://www.kr.or.kr/sub/info.do?m=05010402",
+            "asOf": "2026-09",
+            "checkedAt": "2026-11-07"
           },
-          "note": "개별 구간 공정 확인 필요"
+          "note": "2026.09 국가철도공단 사업 구간 현황 기준. 역사별 공정률은 별도 확인되지 않았습니다."
         },
         {
           "from": "B-신도림",
           "to": "B-여의도",
-          "status": "미상",
+          "status": "공사 중",
           "source": {
-            "label": "부천시 GTX-B 사업개요·노선도",
-            "url": "https://bucheon.go.kr/site/homepage/menu/viewMenu?menuid=148006006003005001",
-            "asOf": "2026-04-22",
-            "checkedAt": "2026-11-04"
+            "label": "국가철도공단 광역철도 주요사업현황",
+            "url": "https://www.kr.or.kr/sub/info.do?m=05010402",
+            "asOf": "2026-09",
+            "checkedAt": "2026-11-07"
           },
-          "note": "개별 구간 공정 확인 필요"
+          "note": "2026.09 국가철도공단 사업 구간 현황 기준. 역사별 공정률은 별도 확인되지 않았습니다."
         },
         {
           "from": "B-여의도",
           "to": "B-용산",
-          "status": "미상",
+          "status": "공사 중",
           "source": {
-            "label": "부천시 GTX-B 사업개요·노선도",
-            "url": "https://bucheon.go.kr/site/homepage/menu/viewMenu?menuid=148006006003005001",
-            "asOf": "2026-04-22",
-            "checkedAt": "2026-11-04"
+            "label": "국가철도공단 광역철도 주요사업현황",
+            "url": "https://www.kr.or.kr/sub/info.do?m=05010402",
+            "asOf": "2026-09",
+            "checkedAt": "2026-11-07"
           },
-          "note": "개별 구간 공정 확인 필요"
+          "note": "2026.09 국가철도공단 사업 구간 현황 기준. 역사별 공정률은 별도 확인되지 않았습니다."
         },
         {
           "from": "B-용산",
           "to": "B-서울역",
           "status": "공사 중",
           "source": {
-            "label": "국가철도공단 광역철도 사업현황",
+            "label": "국가철도공단 광역철도 주요사업현황",
             "url": "https://www.kr.or.kr/sub/info.do?m=05010402",
             "asOf": "2026-09",
-            "checkedAt": "2026-11-04"
-          }
+            "checkedAt": "2026-11-07"
+          },
+          "note": "2026.09 국가철도공단 사업 구간 현황 기준. 역사별 공정률은 별도 확인되지 않았습니다."
         },
         {
           "from": "B-서울역",
           "to": "B-청량리",
           "status": "공사 중",
           "source": {
-            "label": "국가철도공단 광역철도 사업현황",
+            "label": "국가철도공단 광역철도 주요사업현황",
             "url": "https://www.kr.or.kr/sub/info.do?m=05010402",
             "asOf": "2026-09",
-            "checkedAt": "2026-11-04"
-          }
+            "checkedAt": "2026-11-07"
+          },
+          "note": "2026.09 국가철도공단 사업 구간 현황 기준. 역사별 공정률은 별도 확인되지 않았습니다."
         },
         {
           "from": "B-청량리",
           "to": "B-상봉",
           "status": "공사 중",
           "source": {
-            "label": "국가철도공단 광역철도 사업현황",
+            "label": "국가철도공단 광역철도 주요사업현황",
             "url": "https://www.kr.or.kr/sub/info.do?m=05010402",
             "asOf": "2026-09",
-            "checkedAt": "2026-11-04"
-          }
+            "checkedAt": "2026-11-07"
+          },
+          "note": "2026.09 국가철도공단 사업 구간 현황 기준. 역사별 공정률은 별도 확인되지 않았습니다."
         },
         {
           "from": "B-상봉",
           "to": "B-별내",
-          "status": "미상",
+          "status": "공사 중",
           "source": {
-            "label": "부천시 GTX-B 사업개요·노선도",
-            "url": "https://bucheon.go.kr/site/homepage/menu/viewMenu?menuid=148006006003005001",
-            "asOf": "2026-04-22",
-            "checkedAt": "2026-11-04"
+            "label": "국가철도공단 광역철도 주요사업현황",
+            "url": "https://www.kr.or.kr/sub/info.do?m=05010402",
+            "asOf": "2026-09",
+            "checkedAt": "2026-11-07"
           },
-          "note": "개별 구간 공정 확인 필요"
+          "note": "2026.09 국가철도공단 사업 구간 현황 기준. 역사별 공정률은 별도 확인되지 않았습니다."
         },
         {
           "from": "B-별내",
           "to": "B-왕숙",
-          "status": "미상",
+          "status": "공사 중",
           "source": {
-            "label": "부천시 GTX-B 사업개요·노선도",
-            "url": "https://bucheon.go.kr/site/homepage/menu/viewMenu?menuid=148006006003005001",
-            "asOf": "2026-04-22",
-            "checkedAt": "2026-11-04"
+            "label": "국가철도공단 광역철도 주요사업현황",
+            "url": "https://www.kr.or.kr/sub/info.do?m=05010402",
+            "asOf": "2026-09",
+            "checkedAt": "2026-11-07"
           },
-          "note": "개별 구간 공정 확인 필요"
+          "note": "2026.09 국가철도공단 사업 구간 현황 기준. 역사별 공정률은 별도 확인되지 않았습니다."
         },
         {
           "from": "B-왕숙",
           "to": "B-평내호평",
-          "status": "미상",
+          "status": "공사 중",
           "source": {
-            "label": "부천시 GTX-B 사업개요·노선도",
-            "url": "https://bucheon.go.kr/site/homepage/menu/viewMenu?menuid=148006006003005001",
-            "asOf": "2026-04-22",
-            "checkedAt": "2026-11-04"
+            "label": "국가철도공단 광역철도 주요사업현황",
+            "url": "https://www.kr.or.kr/sub/info.do?m=05010402",
+            "asOf": "2026-09",
+            "checkedAt": "2026-11-07"
           },
-          "note": "개별 구간 공정 확인 필요"
+          "note": "2026.09 국가철도공단 사업 구간 현황 기준. 역사별 공정률은 별도 확인되지 않았습니다."
         },
         {
           "from": "B-평내호평",
           "to": "B-마석",
-          "status": "미상",
+          "status": "공사 중",
           "source": {
-            "label": "부천시 GTX-B 사업개요·노선도",
-            "url": "https://bucheon.go.kr/site/homepage/menu/viewMenu?menuid=148006006003005001",
-            "asOf": "2026-04-22",
-            "checkedAt": "2026-11-04"
+            "label": "국가철도공단 광역철도 주요사업현황",
+            "url": "https://www.kr.or.kr/sub/info.do?m=05010402",
+            "asOf": "2026-09",
+            "checkedAt": "2026-11-07"
           },
-          "note": "개별 구간 공정 확인 필요"
+          "note": "2026.09 국가철도공단 사업 구간 현황 기준. 역사별 공정률은 별도 확인되지 않았습니다."
         }
       ],
       "extensions": [
@@ -687,7 +697,20 @@
             "checkedAt": "2026-11-04"
           }
         }
-      ]
+      ],
+      "note": "국가철도공단 2026년 9월 자료는 민자구간 전구간 2025년 8월 착공(공정률 9.5%), 재정구간 전공구 공사 중(9.6%)으로 표기합니다. 이는 노선·사업 구간의 상태이며 개별 역사 준공률·현재 통행을 뜻하지 않습니다.",
+      "coverage": {
+        "checkedAt": "2026-11-07",
+        "listScope": "출처의 본선·지선 역 목록",
+        "listedStations": 14,
+        "mappedStations": 13,
+        "missingCoordinates": [
+          "왕숙"
+        ],
+        "lineGeometry": "검증된 양 끝 역 사이 직선 개략도; 실제 선로 아님",
+        "allListedPositionsAvailable": false,
+        "routeGeometryVerified": false
+      }
     },
     {
       "id": "C",
@@ -696,10 +719,10 @@
       "status": "2026.09 기준 착공 예정",
       "color": "#b06b16",
       "source": {
-        "label": "국가철도공단 광역철도 사업현황",
+        "label": "국가철도공단 광역철도 주요사업현황",
         "url": "https://www.kr.or.kr/sub/info.do?m=05010402",
         "asOf": "2026-09",
-        "checkedAt": "2026-11-04"
+        "checkedAt": "2026-11-07"
       },
       "stations": [
         {
@@ -1078,7 +1101,18 @@
             "checkedAt": "2026-11-04"
           }
         }
-      ]
+      ],
+      "note": "국가철도공단 2026년 9월 자료: 2026년 착공 예정·공정률 0%. 과거 착공식과 실제 착공을 같은 것으로 보지 않습니다. 상록수는 금정에서 분기하는 별도 지선입니다.",
+      "coverage": {
+        "checkedAt": "2026-11-07",
+        "listScope": "출처의 본선·지선 역 목록",
+        "listedStations": 14,
+        "mappedStations": 14,
+        "missingCoordinates": [],
+        "lineGeometry": "검증된 양 끝 역 사이 직선 개략도; 실제 선로 아님",
+        "allListedPositionsAvailable": true,
+        "routeGeometryVerified": false
+      }
     },
     {
       "id": "D",
@@ -1208,7 +1242,26 @@
       ],
       "segments": [],
       "extensions": [],
-      "note": "2024년 국토교통부 구상에 나타난 주요 지점만 표시하며, 확정 정차역 목록이나 실제 노선이 아닙니다."
+      "note": "2024년 정부 구상의 주요 거점만 발췌한 목록입니다. 모든 예정 정차역·최종 노선·2026년 최신 사업 상태를 확정한 자료가 아닙니다. 검증된 역 좌표와 구간이 없어 지도 선을 만들지 않습니다.",
+      "coverage": {
+        "checkedAt": "2026-11-07",
+        "listScope": "2024 구상 주요 거점 발췌",
+        "listedStations": 8,
+        "mappedStations": 0,
+        "missingCoordinates": [
+          "김포",
+          "인천",
+          "인천공항",
+          "부천종합운동장",
+          "삼성",
+          "교산",
+          "팔당",
+          "원주"
+        ],
+        "lineGeometry": "검증된 양 끝 역 사이 직선 개략도; 실제 선로 아님",
+        "allListedPositionsAvailable": false,
+        "routeGeometryVerified": false
+      }
     },
     {
       "id": "E",
@@ -1296,7 +1349,23 @@
       ],
       "segments": [],
       "extensions": [],
-      "note": "2024년 국토교통부 구상에 나타난 주요 지점만 표시하며, 확정 정차역 목록이나 실제 노선이 아닙니다."
+      "note": "2024년 정부 구상의 주요 거점만 발췌한 목록입니다. 모든 예정 정차역·최종 노선·2026년 최신 사업 상태를 확정한 자료가 아닙니다. 검증된 역 좌표와 구간이 없어 지도 선을 만들지 않습니다.",
+      "coverage": {
+        "checkedAt": "2026-11-07",
+        "listScope": "2024 구상 주요 거점 발췌",
+        "listedStations": 5,
+        "mappedStations": 0,
+        "missingCoordinates": [
+          "인천공항",
+          "대장",
+          "연신내",
+          "광운대",
+          "덕소"
+        ],
+        "lineGeometry": "검증된 양 끝 역 사이 직선 개략도; 실제 선로 아님",
+        "allListedPositionsAvailable": false,
+        "routeGeometryVerified": false
+      }
     },
     {
       "id": "F",
@@ -1398,7 +1467,24 @@
       ],
       "segments": [],
       "extensions": [],
-      "note": "2024년 국토교통부 구상에 나타난 주요 지점만 표시하며, 확정 정차역 목록이나 실제 노선이 아닙니다."
+      "note": "2024년 정부 구상의 주요 거점만 발췌한 목록입니다. 모든 예정 정차역·최종 노선·2026년 최신 사업 상태를 확정한 자료가 아닙니다. 검증된 역 좌표와 구간이 없어 지도 선을 만들지 않습니다.",
+      "coverage": {
+        "checkedAt": "2026-11-07",
+        "listScope": "2024 구상 주요 거점 발췌",
+        "listedStations": 6,
+        "mappedStations": 0,
+        "missingCoordinates": [
+          "의정부",
+          "대곡",
+          "수원",
+          "교산",
+          "왕숙2",
+          "덕소"
+        ],
+        "lineGeometry": "검증된 양 끝 역 사이 직선 개략도; 실제 선로 아님",
+        "allListedPositionsAvailable": false,
+        "routeGeometryVerified": false
+      }
     }
   ],
   "publicCoordinateReview": {

@@ -30,6 +30,14 @@ export function zoomMapView(view,factor,anchor={x:.5,y:.5}) {
 }
 // Expose the shared projection and viewport helpers to 3D and walking overlays.
 export const mapProjection = {toXY,toLL,ratio:RATIO,viewRatio,viewPixelWidth};
+export function selectedMapRegion(data, dongCode, districtCode) {
+  const code=dongCode || districtCode;
+  return code ? data?.legalByCode?.[code] || data?.regions?.[code] || null : null;
+}
+export const hasMapSelectionScore = region => Number.isFinite(region?.score) && Boolean(region?.scoreInfo);
+export function mapRegionActionLabel(region) {
+  return region ? `${region.name} ${hasMapSelectionScore(region) ? '부분 점수·정보 보기' : '정보 보기'}` : '';
+}
 // The published boundaries use absolute M, relative l and z commands.
 // Compute bounds when the map's SVG element is not available for getBBox().
 function pathBounds(path) {
@@ -278,6 +286,21 @@ export function createMapController() {
       this.mapView = this.fitMapBounds(box, .16);
       this.mapRenderedArea = this.area;
       this.renderMap();
+    },
+    selectMapRegion(region) {
+      if (!region) return;
+      const focus=()=>{
+        this.query='';
+        this.clearCategoryDetails?.();
+        this.selectedGtx=null;
+        if (region.kind==='legal') this.boundaryMode='legal';
+        else if (region.kind==='dong') this.boundaryMode='admin';
+        // Map selection changes the viewport only. Details are an explicit action.
+        if (region.kind==='dong' || region.kind==='legal') this.focusDong(region.code);
+        else if (region.kind==='gu') this.focusGu(region.code);
+      };
+      if (region.area!==this.area) {this.area=region.area;this.$nextTick(focus);}
+      else focus();
     },
     toggleTerrain() { this.mapTerrain = !this.mapTerrain; this.renderMap(); },
     toggleApartments() { this.mapApartments = !this.mapApartments; if (!this.mapApartments) { this.selectedApartment = null; this.selectedApartmentGroup = null; } this.renderMap(); },

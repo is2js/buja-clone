@@ -10,6 +10,17 @@
 .building-key {display:inline-flex;align-items:center;gap:4px}.building-key i {display:inline-block;width:11px;height:11px;border:1px solid #a9b2bc;border-radius:2px;margin-left:5px}.building-key i:first-child {margin-left:0}
 
 /* One set of map tools and one map element serve both card and expanded views. */
+.map-page .map-selection-bar{display:flex;flex-direction:column;align-items:stretch;gap:4px;padding:7px 9px}
+.map-selection-heading{display:flex;align-items:center;gap:7px;min-width:0}
+.map-selection-heading>span{flex:1;min-width:0;color:#344e70;font-size:11px;overflow-wrap:anywhere}
+.map-selection-heading>span small{display:block;margin-top:3px;color:#7d8b9b;font-size:9px;line-height:1.4}
+.map-selection-details{flex:none;max-width:62%;min-height:44px;padding:6px 9px;border:1px solid #b6cce5;border-radius:8px;background:#fff;color:#244e80;font-size:11px;font-weight:700;line-height:1.4;overflow-wrap:anywhere}
+.map-selection-heading .focus-close{flex:none;width:32px;min-height:44px!important}
+.map-selection-score-help{font-size:10px;color:#6a7e95;line-height:1.55}
+.map-selection-score-help summary{padding:4px 0;cursor:pointer}
+.map-selection-score-help p{margin:5px 0}
+.map-selection-missing{font-size:9px;color:#7d8b9a;line-height:1.5}
+.map-expanded .map-selection-score-help[open]{max-height:22dvh;overflow:auto}
 .building-zoom-prompt{position:absolute;z-index:9;top:10px;left:10px;right:10px;display:flex;align-items:center;gap:10px;padding:10px 11px;border:1px solid #dce7f3;border-radius:10px;background:#f1f6fcf5;color:#385778;box-shadow:0 3px 12px #244e801a}.building-zoom-prompt>div{flex:1;min-width:0}.building-zoom-prompt b{display:block;font-size:12px;line-height:1.5}.building-zoom-prompt span{display:block;margin-top:3px;font-size:10px;line-height:1.5;color:#6c7f94}.building-zoom-prompt button{flex:none;min-height:44px;padding:8px 10px;border:0;border-radius:8px;background:#244e80;color:white;font-size:11px;font-weight:700}.map-expanded .building-zoom-prompt{max-width:560px;padding:7px 10px}.map-expanded .building-zoom-prompt span{display:none}
 .map-region-picker,.map-search-panel{min-width:0;border:0;margin:0}
 .map-region-picker>summary,.map-search-panel>summary{display:none;list-style:none;cursor:pointer}

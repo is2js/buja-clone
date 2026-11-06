@@ -2,7 +2,7 @@ import Alpine from 'alpinejs';
 import { loadData } from './data.js';
 import { loadLegalData } from './legal.js';
 import { applyPartialScores } from './scoring.js';
-import { createMapController, mapProjection } from './map.js';
+import { createMapController, mapProjection, selectedMapRegion as resolveSelectedMapRegion, hasMapSelectionScore, mapRegionActionLabel } from './map.js';
 import { hasComparablePrice } from './map-metrics.js';
 import { getApartmentIndex, findApartment } from './apartment-data.js';
 import { createHillshadeController } from './terrain-data.js';
@@ -271,6 +271,10 @@ Alpine.data('bujaApp', () => ({
     return this.data.regionList.filter(r => r.area === this.area && r.kind === 'gu').sort((a, b) => a.code.localeCompare(b.code));
   },
   get focusDongs() { return (this.boundaryMode === 'legal' ? (this.data.legalRegions || []).filter(r => r.area === this.area) : this.areaDongs).filter(r => r.guCode === this.selectedGu); },
+  get mapSelectedRegion() { return resolveSelectedMapRegion(this.data,this.selectedDong,this.selectedGu); },
+  get mapSelectionHasScore() { return hasMapSelectionScore(this.mapSelectedRegion); },
+  get mapSelectionActionLabel() { return mapRegionActionLabel(this.mapSelectedRegion); },
+  get mapSelectionWeights() { return (this.mapSelectedRegion?.scoreInfo?.parts || []).map(part=>`${part.label} ${(part.effectiveWeight*100).toFixed(1)}%`).join(' · '); },
   get gyeonggiCities() {
     const groups = new Map();
     for (const region of this.data.regionList) {
@@ -385,15 +389,6 @@ Alpine.data('bujaApp', () => ({
     };
     if (region.area !== this.area) { this.area = region.area; this.$nextTick(apply); }
     else apply();
-  },
-  selectMapRegion(region) {
-    // Station clicks open detail even when they point to a different district or province.
-    if (region.area !== this.area) { this.selectRegion(region); return; }
-    if ((region.kind === 'dong' || region.kind === 'legal') && region.guCode !== this.selectedGu) this.focusGu(region.guCode);
-    if (region.kind === 'gu' && region.code !== this.selectedGu) this.focusGu(region.code);
-    if (this.area === '41' && region.guCode) this.selectedCity = region.guCode.slice(0, 4);
-    this.selectedDong = (region.kind === 'dong' || region.kind === 'legal') ? region.code : '';
-    this.openRegion(region.code);
   },
   openRegion(code) { const region = this.data.regions[code] || this.data.legalByCode?.[code]; if (code && region) { this.selectedApartment = null; this.selectedRegion = region; } },
   closeRegion() { this.selectedRegion = null; },

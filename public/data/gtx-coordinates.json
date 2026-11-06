@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-11-04",
-  "notice": "기존 환승역 좌표는 GTX 신설 역사와 차이가 있을 수 있습니다. 직선 연결은 실제 선로가 아닙니다.",
+  "asOf": "2026-11-07",
+  "notice": "기존 환승역의 참고 좌표이며 GTX 신설 역사·승강장·출입구의 확정 위치가 아닙니다. 계획역은 추정하지 않으며 직선 연결은 실제 선로가 아닙니다.",
   "coordinates": {
     "A-연신내": {
       "coordinate": [
@@ -317,6 +317,286 @@
         "url": "https://www.data.go.kr/data/15067652/fileData.do",
         "asOf": "2025-07-11",
         "checkedAt": "2026-11-04",
+        "license": "공공데이터포털 이용허락범위 제한 없음"
+      }
+    },
+    "A-대곡": {
+      "coordinate": [
+        126.810225,
+        37.631629
+      ],
+      "coordinateKind": "existing-transfer-reference",
+      "coordinateNotice": "GTX 신설 역사의 확정 위치가 아닌 기존 경의중앙선 대곡역의 참고 좌표입니다. 실제 GTX 승강장·출입구와 다를 수 있습니다.",
+      "sourceStationCode": "1953",
+      "sourceStationName": "대곡역",
+      "sourceLineCode": "I4108",
+      "coordinateSource": {
+        "label": "국가철도공단 전국도시철도역사정보표준데이터",
+        "url": "https://www.data.go.kr/data/15013205/standard.do",
+        "downloadUrl": "https://openapi.kric.go.kr/rips/dataset/download.file?type=filedata&id=32&operation=1",
+        "sha256": "cdf1d84a7e5c898b2aacd622783ba8ba9af35c40bee0561dc97d55ce8e063f94",
+        "asOf": "2025-04-08",
+        "checkedAt": "2026-11-07",
+        "license": "공공데이터포털 이용허락범위 제한 없음"
+      }
+    },
+    "A-성남": {
+      "coordinate": [
+        127.11949,
+        37.394709
+      ],
+      "coordinateKind": "existing-transfer-reference",
+      "coordinateNotice": "GTX 신설 역사의 확정 위치가 아닌 기존 경강선 성남역의 참고 좌표입니다. 실제 GTX 승강장·출입구와 다를 수 있습니다.",
+      "sourceStationCode": "1512",
+      "sourceStationName": "성남역",
+      "sourceLineCode": "I41K5",
+      "coordinateSource": {
+        "label": "국가철도공단 전국도시철도역사정보표준데이터",
+        "url": "https://www.data.go.kr/data/15013205/standard.do",
+        "downloadUrl": "https://openapi.kric.go.kr/rips/dataset/download.file?type=filedata&id=32&operation=1",
+        "sha256": "cdf1d84a7e5c898b2aacd622783ba8ba9af35c40bee0561dc97d55ce8e063f94",
+        "asOf": "2025-04-08",
+        "checkedAt": "2026-11-07",
+        "license": "공공데이터포털 이용허락범위 제한 없음"
+      }
+    },
+    "A-구성": {
+      "coordinate": [
+        127.105664,
+        37.299013
+      ],
+      "coordinateKind": "existing-transfer-reference",
+      "coordinateNotice": "GTX 신설 역사의 확정 위치가 아닌 기존 분당선 구성역의 참고 좌표입니다. 실제 GTX 승강장·출입구와 다를 수 있습니다.",
+      "sourceStationCode": "1863",
+      "sourceStationName": "구성역",
+      "sourceLineCode": "I4105",
+      "coordinateSource": {
+        "label": "국가철도공단 전국도시철도역사정보표준데이터",
+        "url": "https://www.data.go.kr/data/15013205/standard.do",
+        "downloadUrl": "https://openapi.kric.go.kr/rips/dataset/download.file?type=filedata&id=32&operation=1",
+        "sha256": "cdf1d84a7e5c898b2aacd622783ba8ba9af35c40bee0561dc97d55ce8e063f94",
+        "asOf": "2025-04-08",
+        "checkedAt": "2026-11-07",
+        "license": "공공데이터포털 이용허락범위 제한 없음"
+      }
+    },
+    "B-별내": {
+      "coordinate": [
+        127.127208,
+        37.642221
+      ],
+      "coordinateKind": "existing-transfer-reference",
+      "coordinateNotice": "GTX 신설 역사의 확정 위치가 아닌 기존 경춘선 별내역의 참고 좌표입니다. 실제 GTX 승강장·출입구와 다를 수 있습니다.",
+      "sourceStationCode": "1313",
+      "sourceStationName": "별내역",
+      "sourceLineCode": "I41K2",
+      "coordinateSource": {
+        "label": "국가철도공단 전국도시철도역사정보표준데이터",
+        "url": "https://www.data.go.kr/data/15013205/standard.do",
+        "downloadUrl": "https://openapi.kric.go.kr/rips/dataset/download.file?type=filedata&id=32&operation=1",
+        "sha256": "cdf1d84a7e5c898b2aacd622783ba8ba9af35c40bee0561dc97d55ce8e063f94",
+        "asOf": "2025-04-08",
+        "checkedAt": "2026-11-07",
+        "license": "공공데이터포털 이용허락범위 제한 없음"
+      }
+    },
+    "B-평내호평": {
+      "coordinate": [
+        127.244452,
+        37.653229
+      ],
+      "coordinateKind": "existing-transfer-reference",
+      "coordinateNotice": "GTX 신설 역사의 확정 위치가 아닌 기존 경춘선 평내호평역의 참고 좌표입니다. 실제 GTX 승강장·출입구와 다를 수 있습니다.",
+      "sourceStationCode": "1317",
+      "sourceStationName": "평내호평역",
+      "sourceLineCode": "I41K2",
+      "coordinateSource": {
+        "label": "국가철도공단 전국도시철도역사정보표준데이터",
+        "url": "https://www.data.go.kr/data/15013205/standard.do",
+        "downloadUrl": "https://openapi.kric.go.kr/rips/dataset/download.file?type=filedata&id=32&operation=1",
+        "sha256": "cdf1d84a7e5c898b2aacd622783ba8ba9af35c40bee0561dc97d55ce8e063f94",
+        "asOf": "2025-04-08",
+        "checkedAt": "2026-11-07",
+        "license": "공공데이터포털 이용허락범위 제한 없음"
+      }
+    },
+    "B-마석": {
+      "coordinate": [
+        127.311713,
+        37.652328
+      ],
+      "coordinateKind": "existing-transfer-reference",
+      "coordinateNotice": "GTX 신설 역사의 확정 위치가 아닌 기존 경춘선 마석역의 참고 좌표입니다. 실제 GTX 승강장·출입구와 다를 수 있습니다.",
+      "sourceStationCode": "1319",
+      "sourceStationName": "마석역",
+      "sourceLineCode": "I41K2",
+      "coordinateSource": {
+        "label": "국가철도공단 전국도시철도역사정보표준데이터",
+        "url": "https://www.data.go.kr/data/15013205/standard.do",
+        "downloadUrl": "https://openapi.kric.go.kr/rips/dataset/download.file?type=filedata&id=32&operation=1",
+        "sha256": "cdf1d84a7e5c898b2aacd622783ba8ba9af35c40bee0561dc97d55ce8e063f94",
+        "asOf": "2025-04-08",
+        "checkedAt": "2026-11-07",
+        "license": "공공데이터포털 이용허락범위 제한 없음"
+      }
+    },
+    "C-덕정": {
+      "coordinate": [
+        127.061511,
+        37.843216
+      ],
+      "coordinateKind": "existing-transfer-reference",
+      "coordinateNotice": "GTX 신설 역사의 확정 위치가 아닌 기존 경원선 덕정역의 참고 좌표입니다. 실제 GTX 승강장·출입구와 다를 수 있습니다.",
+      "sourceStationCode": "1911",
+      "sourceStationName": "덕정역",
+      "sourceLineCode": "I4102",
+      "coordinateSource": {
+        "label": "국가철도공단 전국도시철도역사정보표준데이터",
+        "url": "https://www.data.go.kr/data/15013205/standard.do",
+        "downloadUrl": "https://openapi.kric.go.kr/rips/dataset/download.file?type=filedata&id=32&operation=1",
+        "sha256": "cdf1d84a7e5c898b2aacd622783ba8ba9af35c40bee0561dc97d55ce8e063f94",
+        "asOf": "2025-04-08",
+        "checkedAt": "2026-11-07",
+        "license": "공공데이터포털 이용허락범위 제한 없음"
+      }
+    },
+    "C-의정부": {
+      "coordinate": [
+        127.045891,
+        37.73873
+      ],
+      "coordinateKind": "existing-transfer-reference",
+      "coordinateNotice": "GTX 신설 역사의 확정 위치가 아닌 기존 경원선 의정부역의 참고 좌표입니다. 실제 GTX 승강장·출입구와 다를 수 있습니다.",
+      "sourceStationCode": "1906",
+      "sourceStationName": "의정부역",
+      "sourceLineCode": "I4102",
+      "coordinateSource": {
+        "label": "국가철도공단 전국도시철도역사정보표준데이터",
+        "url": "https://www.data.go.kr/data/15013205/standard.do",
+        "downloadUrl": "https://openapi.kric.go.kr/rips/dataset/download.file?type=filedata&id=32&operation=1",
+        "sha256": "cdf1d84a7e5c898b2aacd622783ba8ba9af35c40bee0561dc97d55ce8e063f94",
+        "asOf": "2025-04-08",
+        "checkedAt": "2026-11-07",
+        "license": "공공데이터포털 이용허락범위 제한 없음"
+      }
+    },
+    "C-광운대": {
+      "coordinate": [
+        127.06181,
+        37.62357
+      ],
+      "coordinateKind": "existing-transfer-reference",
+      "coordinateNotice": "GTX 신설 역사의 확정 위치가 아닌 기존 경원선 광운대역의 참고 좌표입니다. 실제 GTX 승강장·출입구와 다를 수 있습니다.",
+      "sourceStationCode": "1019",
+      "sourceStationName": "광운대역",
+      "sourceLineCode": "I4102",
+      "coordinateSource": {
+        "label": "국가철도공단 전국도시철도역사정보표준데이터",
+        "url": "https://www.data.go.kr/data/15013205/standard.do",
+        "downloadUrl": "https://openapi.kric.go.kr/rips/dataset/download.file?type=filedata&id=32&operation=1",
+        "sha256": "cdf1d84a7e5c898b2aacd622783ba8ba9af35c40bee0561dc97d55ce8e063f94",
+        "asOf": "2025-04-08",
+        "checkedAt": "2026-11-07",
+        "license": "공공데이터포털 이용허락범위 제한 없음"
+      }
+    },
+    "C-정부과천청사": {
+      "coordinate": [
+        126.989802,
+        37.426445
+      ],
+      "coordinateKind": "existing-transfer-reference",
+      "coordinateNotice": "GTX 신설 역사의 확정 위치가 아닌 기존 안산과천선 정부과천청사역의 참고 좌표입니다. 실제 GTX 승강장·출입구와 다를 수 있습니다.",
+      "sourceStationCode": "1454",
+      "sourceStationName": "정부과천청사역",
+      "sourceLineCode": "I4103",
+      "coordinateSource": {
+        "label": "국가철도공단 전국도시철도역사정보표준데이터",
+        "url": "https://www.data.go.kr/data/15013205/standard.do",
+        "downloadUrl": "https://openapi.kric.go.kr/rips/dataset/download.file?type=filedata&id=32&operation=1",
+        "sha256": "cdf1d84a7e5c898b2aacd622783ba8ba9af35c40bee0561dc97d55ce8e063f94",
+        "asOf": "2025-04-08",
+        "checkedAt": "2026-11-07",
+        "license": "공공데이터포털 이용허락범위 제한 없음"
+      }
+    },
+    "C-인덕원": {
+      "coordinate": [
+        126.976718,
+        37.401901
+      ],
+      "coordinateKind": "existing-transfer-reference",
+      "coordinateNotice": "GTX 신설 역사의 확정 위치가 아닌 기존 안산과천선 인덕원역의 참고 좌표입니다. 실제 GTX 승강장·출입구와 다를 수 있습니다.",
+      "sourceStationCode": "1455",
+      "sourceStationName": "인덕원역",
+      "sourceLineCode": "I4103",
+      "coordinateSource": {
+        "label": "국가철도공단 전국도시철도역사정보표준데이터",
+        "url": "https://www.data.go.kr/data/15013205/standard.do",
+        "downloadUrl": "https://openapi.kric.go.kr/rips/dataset/download.file?type=filedata&id=32&operation=1",
+        "sha256": "cdf1d84a7e5c898b2aacd622783ba8ba9af35c40bee0561dc97d55ce8e063f94",
+        "asOf": "2025-04-08",
+        "checkedAt": "2026-11-07",
+        "license": "공공데이터포털 이용허락범위 제한 없음"
+      }
+    },
+    "C-금정": {
+      "coordinate": [
+        126.943411,
+        37.371957
+      ],
+      "coordinateKind": "existing-transfer-reference",
+      "coordinateNotice": "GTX 신설 역사의 확정 위치가 아닌 기존 경부선 금정역의 참고 좌표입니다. 실제 GTX 승강장·출입구와 다를 수 있습니다.",
+      "sourceStationCode": "1708",
+      "sourceStationName": "금정역",
+      "sourceLineCode": "I4101",
+      "coordinateSource": {
+        "label": "국가철도공단 전국도시철도역사정보표준데이터",
+        "url": "https://www.data.go.kr/data/15013205/standard.do",
+        "downloadUrl": "https://openapi.kric.go.kr/rips/dataset/download.file?type=filedata&id=32&operation=1",
+        "sha256": "cdf1d84a7e5c898b2aacd622783ba8ba9af35c40bee0561dc97d55ce8e063f94",
+        "asOf": "2025-04-08",
+        "checkedAt": "2026-11-07",
+        "license": "공공데이터포털 이용허락범위 제한 없음"
+      }
+    },
+    "C-의왕": {
+      "coordinate": [
+        126.948099,
+        37.320648
+      ],
+      "coordinateKind": "existing-transfer-reference",
+      "coordinateNotice": "GTX 신설 역사의 확정 위치가 아닌 기존 경부선 의왕역의 참고 좌표입니다. 실제 GTX 승강장·출입구와 다를 수 있습니다.",
+      "sourceStationCode": "1710",
+      "sourceStationName": "의왕역",
+      "sourceLineCode": "I4101",
+      "coordinateSource": {
+        "label": "국가철도공단 전국도시철도역사정보표준데이터",
+        "url": "https://www.data.go.kr/data/15013205/standard.do",
+        "downloadUrl": "https://openapi.kric.go.kr/rips/dataset/download.file?type=filedata&id=32&operation=1",
+        "sha256": "cdf1d84a7e5c898b2aacd622783ba8ba9af35c40bee0561dc97d55ce8e063f94",
+        "asOf": "2025-04-08",
+        "checkedAt": "2026-11-07",
+        "license": "공공데이터포털 이용허락범위 제한 없음"
+      }
+    },
+    "C-상록수": {
+      "coordinate": [
+        126.866533,
+        37.302845
+      ],
+      "coordinateKind": "existing-transfer-reference",
+      "coordinateNotice": "GTX 신설 역사의 확정 위치가 아닌 기존 안산과천선 상록수역의 참고 좌표입니다. 실제 GTX 승강장·출입구와 다를 수 있습니다.",
+      "sourceStationCode": "1754",
+      "sourceStationName": "상록수역",
+      "sourceLineCode": "I4103",
+      "coordinateSource": {
+        "label": "국가철도공단 전국도시철도역사정보표준데이터",
+        "url": "https://www.data.go.kr/data/15013205/standard.do",
+        "downloadUrl": "https://openapi.kric.go.kr/rips/dataset/download.file?type=filedata&id=32&operation=1",
+        "sha256": "cdf1d84a7e5c898b2aacd622783ba8ba9af35c40bee0561dc97d55ce8e063f94",
+        "asOf": "2025-04-08",
+        "checkedAt": "2026-11-07",
         "license": "공공데이터포털 이용허락범위 제한 없음"
       }
     }
