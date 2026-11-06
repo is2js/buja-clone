@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[128.4474113,35.1327208],[128.4476688,35.1320539],[128.4478566,35.1320934],[128.4475776,35.1327646],[128.4474113,35.1327208]]]},"properties":{"id":"way/472063134","name":"","kind":"hospital","height":15.0,"heightSource":"levels","levels":5.0,"source":"OpenStreetMap"}}]}

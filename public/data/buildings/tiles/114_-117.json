@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[129.0469174,35.0771681],[129.0474559,35.0766659],[129.047542,35.0767278],[129.0470035,35.0772299],[129.0469174,35.0771681]]]},"properties":{"id":"way/1379003602","name":"동산아파트","kind":"apartments","height":24.0,"heightSource":"levels","levels":8.0,"source":"OpenStreetMap"}}]}

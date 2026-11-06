@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[127.1660809,38.2574657],[127.1664383,38.2573542],[127.1664743,38.2574252],[127.1661169,38.2575368],[127.1660809,38.2574657]]]},"properties":{"id":"way/623277174","name":"백마고지역","kind":"train_station","height":3.0,"heightSource":"levels","levels":1.0,"source":"OpenStreetMap"}}]}

@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[126.9715223,35.9617182],[126.9715257,35.9607635],[126.9716676,35.960769],[126.9716609,35.9617154],[126.9715223,35.9617182]]]},"properties":{"id":"way/700652191","name":"105동","kind":"yes","height":45.0,"heightSource":"levels","levels":15.0,"source":"OpenStreetMap"}}]}

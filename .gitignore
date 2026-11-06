@@ -1,0 +1,24 @@
+node_modules/
+dist/
+work/apartment-input/
+
+work/route-input/
+work/route-deps/
+
+# Local credentials and environment settings
+.env
+.env.*
+!.env.example
+
+work/nationwide-buildings/
+work/vworld-candidate/
+work/geo-deps/
+
+# Local collection inputs, verification captures and non-public snapshots
+work/
+__pycache__/
+*.pyc
+public/data/real/transactions.json
+public/data/real/transactions-other.json
+public/data/gtx.json
+public/data/demo.json

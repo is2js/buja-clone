@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[128.3741592,36.1201576],[128.3741599,36.1197721],[128.3750922,36.1198023],[128.3750499,36.1201734],[128.3741592,36.1201576]]]},"properties":{"id":"way/472092563","name":"전원리빙필","kind":"apartments","height":54.0,"heightSource":"levels","levels":18.0,"source":"OpenStreetMap"}}]}

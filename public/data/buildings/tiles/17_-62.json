@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[127.1051938,36.1780376],[127.105249,36.1778527],[127.1053429,36.1778709],[127.1052876,36.1780559],[127.1051938,36.1780376]]]},"properties":{"id":"way/1158209372","name":"승지원룸","kind":"apartments","height":6.0,"heightSource":"levels","levels":2.0,"source":"OpenStreetMap"}}]}

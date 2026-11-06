@@ -1,0 +1,324 @@
+{
+  "asOf": "2026-11-04",
+  "notice": "기존 환승역 좌표는 GTX 신설 역사와 차이가 있을 수 있습니다. 직선 연결은 실제 선로가 아닙니다.",
+  "coordinates": {
+    "A-연신내": {
+      "coordinate": [
+        126.920859,
+        37.618855
+      ],
+      "coordinateKind": "existing-transfer-reference",
+      "coordinateNotice": "GTX 역의 확정 좌표가 아닌 기존 서울 지하철 3호선 연신내역의 참고 좌표입니다.",
+      "sourceStationCode": "311",
+      "coordinateSource": {
+        "label": "서울교통공사 1~8호선 역사 좌표(위경도) 정보",
+        "url": "https://www.data.go.kr/data/15099316/fileData.do",
+        "asOf": "2025-08-14",
+        "checkedAt": "2026-11-04",
+        "license": "공공데이터포털 이용허락범위 제한 없음"
+      }
+    },
+    "A-서울역": {
+      "coordinate": [
+        126.972533,
+        37.55315
+      ],
+      "coordinateKind": "existing-transfer-reference",
+      "coordinateNotice": "GTX 역의 확정 좌표가 아닌 기존 서울 지하철 1호선 서울역의 참고 좌표입니다.",
+      "sourceStationCode": "150",
+      "coordinateSource": {
+        "label": "서울교통공사 1~8호선 역사 좌표(위경도) 정보",
+        "url": "https://www.data.go.kr/data/15099316/fileData.do",
+        "asOf": "2025-08-14",
+        "checkedAt": "2026-11-04",
+        "license": "공공데이터포털 이용허락범위 제한 없음"
+      }
+    },
+    "A-삼성": {
+      "coordinate": [
+        127.063203,
+        37.508827
+      ],
+      "coordinateKind": "existing-transfer-reference",
+      "coordinateNotice": "GTX 역의 확정 좌표가 아닌 기존 서울 지하철 2호선 삼성역의 참고 좌표입니다.",
+      "sourceStationCode": "219",
+      "coordinateSource": {
+        "label": "서울교통공사 1~8호선 역사 좌표(위경도) 정보",
+        "url": "https://www.data.go.kr/data/15099316/fileData.do",
+        "asOf": "2025-08-14",
+        "checkedAt": "2026-11-04",
+        "license": "공공데이터포털 이용허락범위 제한 없음"
+      }
+    },
+    "A-수서": {
+      "coordinate": [
+        127.101324,
+        37.487507
+      ],
+      "coordinateKind": "existing-transfer-reference",
+      "coordinateNotice": "GTX 역의 확정 좌표가 아닌 기존 서울 지하철 3호선 수서역의 참고 좌표입니다.",
+      "sourceStationCode": "339",
+      "coordinateSource": {
+        "label": "서울교통공사 1~8호선 역사 좌표(위경도) 정보",
+        "url": "https://www.data.go.kr/data/15099316/fileData.do",
+        "asOf": "2025-08-14",
+        "checkedAt": "2026-11-04",
+        "license": "공공데이터포털 이용허락범위 제한 없음"
+      }
+    },
+    "B-신도림": {
+      "coordinate": [
+        126.891222,
+        37.508815
+      ],
+      "coordinateKind": "existing-transfer-reference",
+      "coordinateNotice": "GTX 역의 확정 좌표가 아닌 기존 서울 지하철 2호선 신도림역의 참고 좌표입니다.",
+      "sourceStationCode": "234",
+      "coordinateSource": {
+        "label": "서울교통공사 1~8호선 역사 좌표(위경도) 정보",
+        "url": "https://www.data.go.kr/data/15099316/fileData.do",
+        "asOf": "2025-08-14",
+        "checkedAt": "2026-11-04",
+        "license": "공공데이터포털 이용허락범위 제한 없음"
+      }
+    },
+    "B-여의도": {
+      "coordinate": [
+        126.924318,
+        37.521578
+      ],
+      "coordinateKind": "existing-transfer-reference",
+      "coordinateNotice": "GTX 역의 확정 좌표가 아닌 기존 서울 지하철 5호선 여의도역의 참고 좌표입니다.",
+      "sourceStationCode": "2527",
+      "coordinateSource": {
+        "label": "서울교통공사 1~8호선 역사 좌표(위경도) 정보",
+        "url": "https://www.data.go.kr/data/15099316/fileData.do",
+        "asOf": "2025-08-14",
+        "checkedAt": "2026-11-04",
+        "license": "공공데이터포털 이용허락범위 제한 없음"
+      }
+    },
+    "B-서울역": {
+      "coordinate": [
+        126.972533,
+        37.55315
+      ],
+      "coordinateKind": "existing-transfer-reference",
+      "coordinateNotice": "GTX 역의 확정 좌표가 아닌 기존 서울 지하철 1호선 서울역의 참고 좌표입니다.",
+      "sourceStationCode": "150",
+      "coordinateSource": {
+        "label": "서울교통공사 1~8호선 역사 좌표(위경도) 정보",
+        "url": "https://www.data.go.kr/data/15099316/fileData.do",
+        "asOf": "2025-08-14",
+        "checkedAt": "2026-11-04",
+        "license": "공공데이터포털 이용허락범위 제한 없음"
+      }
+    },
+    "B-청량리": {
+      "coordinate": [
+        127.045063,
+        37.580148
+      ],
+      "coordinateKind": "existing-transfer-reference",
+      "coordinateNotice": "GTX 역의 확정 좌표가 아닌 기존 서울 지하철 1호선 청량리역의 참고 좌표입니다.",
+      "sourceStationCode": "158",
+      "coordinateSource": {
+        "label": "서울교통공사 1~8호선 역사 좌표(위경도) 정보",
+        "url": "https://www.data.go.kr/data/15099316/fileData.do",
+        "asOf": "2025-08-14",
+        "checkedAt": "2026-11-04",
+        "license": "공공데이터포털 이용허락범위 제한 없음"
+      }
+    },
+    "B-상봉": {
+      "coordinate": [
+        127.085708,
+        37.595673
+      ],
+      "coordinateKind": "existing-transfer-reference",
+      "coordinateNotice": "GTX 역의 확정 좌표가 아닌 기존 서울 지하철 7호선 상봉역의 참고 좌표입니다.",
+      "sourceStationCode": "2722",
+      "coordinateSource": {
+        "label": "서울교통공사 1~8호선 역사 좌표(위경도) 정보",
+        "url": "https://www.data.go.kr/data/15099316/fileData.do",
+        "asOf": "2025-08-14",
+        "checkedAt": "2026-11-04",
+        "license": "공공데이터포털 이용허락범위 제한 없음"
+      }
+    },
+    "C-창동": {
+      "coordinate": [
+        127.046746,
+        37.652993
+      ],
+      "coordinateKind": "existing-transfer-reference",
+      "coordinateNotice": "GTX 역의 확정 좌표가 아닌 기존 서울 지하철 4호선 창동역의 참고 좌표입니다.",
+      "sourceStationCode": "412",
+      "coordinateSource": {
+        "label": "서울교통공사 1~8호선 역사 좌표(위경도) 정보",
+        "url": "https://www.data.go.kr/data/15099316/fileData.do",
+        "asOf": "2025-08-14",
+        "checkedAt": "2026-11-04",
+        "license": "공공데이터포털 이용허락범위 제한 없음"
+      }
+    },
+    "C-청량리": {
+      "coordinate": [
+        127.045063,
+        37.580148
+      ],
+      "coordinateKind": "existing-transfer-reference",
+      "coordinateNotice": "GTX 역의 확정 좌표가 아닌 기존 서울 지하철 1호선 청량리역의 참고 좌표입니다.",
+      "sourceStationCode": "158",
+      "coordinateSource": {
+        "label": "서울교통공사 1~8호선 역사 좌표(위경도) 정보",
+        "url": "https://www.data.go.kr/data/15099316/fileData.do",
+        "asOf": "2025-08-14",
+        "checkedAt": "2026-11-04",
+        "license": "공공데이터포털 이용허락범위 제한 없음"
+      }
+    },
+    "C-왕십리": {
+      "coordinate": [
+        127.035505,
+        37.561159
+      ],
+      "coordinateKind": "existing-transfer-reference",
+      "coordinateNotice": "GTX 역의 확정 좌표가 아닌 기존 서울 지하철 2호선 왕십리역의 참고 좌표입니다.",
+      "sourceStationCode": "208",
+      "coordinateSource": {
+        "label": "서울교통공사 1~8호선 역사 좌표(위경도) 정보",
+        "url": "https://www.data.go.kr/data/15099316/fileData.do",
+        "asOf": "2025-08-14",
+        "checkedAt": "2026-11-04",
+        "license": "공공데이터포털 이용허락범위 제한 없음"
+      }
+    },
+    "C-삼성": {
+      "coordinate": [
+        127.063203,
+        37.508827
+      ],
+      "coordinateKind": "existing-transfer-reference",
+      "coordinateNotice": "GTX 역의 확정 좌표가 아닌 기존 서울 지하철 2호선 삼성역의 참고 좌표입니다.",
+      "sourceStationCode": "219",
+      "coordinateSource": {
+        "label": "서울교통공사 1~8호선 역사 좌표(위경도) 정보",
+        "url": "https://www.data.go.kr/data/15099316/fileData.do",
+        "asOf": "2025-08-14",
+        "checkedAt": "2026-11-04",
+        "license": "공공데이터포털 이용허락범위 제한 없음"
+      }
+    },
+    "C-양재": {
+      "coordinate": [
+        127.03513,
+        37.48466
+      ],
+      "coordinateKind": "existing-transfer-reference",
+      "coordinateNotice": "GTX 역의 확정 좌표가 아닌 기존 서울 지하철 3호선 양재역의 참고 좌표입니다.",
+      "sourceStationCode": "332",
+      "coordinateSource": {
+        "label": "서울교통공사 1~8호선 역사 좌표(위경도) 정보",
+        "url": "https://www.data.go.kr/data/15099316/fileData.do",
+        "asOf": "2025-08-14",
+        "checkedAt": "2026-11-04",
+        "license": "공공데이터포털 이용허락범위 제한 없음"
+      }
+    },
+    "B-인천대입구": {
+      "coordinate": [
+        126.639351,
+        37.386239
+      ],
+      "coordinateKind": "existing-transfer-reference",
+      "coordinateNotice": "GTX 역의 확정 좌표가 아닌 기존 인천지하철 1호선 인천대입구역의 참고 좌표입니다.",
+      "sourceStationCode": "3136",
+      "coordinateSource": {
+        "label": "인천교통공사 도시철도역사정보",
+        "url": "https://www.data.go.kr/data/15083751/fileData.do",
+        "asOf": "2026-06-30",
+        "checkedAt": "2026-11-04",
+        "license": "공공데이터포털 이용허락범위 제한 없음"
+      }
+    },
+    "B-인천시청": {
+      "coordinate": [
+        126.702216,
+        37.457615
+      ],
+      "coordinateKind": "existing-transfer-reference",
+      "coordinateNotice": "GTX 역의 확정 좌표가 아닌 기존 인천지하철 1호선 인천시청역의 참고 좌표입니다.",
+      "sourceStationCode": "3124",
+      "coordinateSource": {
+        "label": "인천교통공사 도시철도역사정보",
+        "url": "https://www.data.go.kr/data/15083751/fileData.do",
+        "asOf": "2026-06-30",
+        "checkedAt": "2026-11-04",
+        "license": "공공데이터포털 이용허락범위 제한 없음"
+      }
+    },
+    "B-부평": {
+      "coordinate": [
+        126.723437,
+        37.490541
+      ],
+      "coordinateKind": "existing-transfer-reference",
+      "coordinateNotice": "GTX 역의 확정 좌표가 아닌 기존 인천지하철 1호선 부평역의 참고 좌표입니다.",
+      "sourceStationCode": "3120",
+      "coordinateSource": {
+        "label": "인천교통공사 도시철도역사정보",
+        "url": "https://www.data.go.kr/data/15083751/fileData.do",
+        "asOf": "2026-06-30",
+        "checkedAt": "2026-11-04",
+        "license": "공공데이터포털 이용허락범위 제한 없음"
+      }
+    },
+    "B-부천종합운동장": {
+      "coordinate": [
+        126.7975651,
+        37.5056936
+      ],
+      "coordinateKind": "existing-transfer-reference",
+      "coordinateNotice": "GTX 역의 확정 좌표가 아닌 기존 7호선 부천종합운동장역의 참고 좌표입니다.",
+      "sourceStationCode": "3754",
+      "coordinateSource": {
+        "label": "인천교통공사 도시철도역사정보",
+        "url": "https://www.data.go.kr/data/15083751/fileData.do",
+        "asOf": "2026-06-30",
+        "checkedAt": "2026-11-04",
+        "license": "공공데이터포털 이용허락범위 제한 없음"
+      }
+    },
+    "B-용산": {
+      "coordinate": [
+        126.963918,
+        37.529567
+      ],
+      "coordinateKind": "existing-transfer-reference",
+      "coordinateNotice": "GTX 역의 확정 좌표가 아닌 기존 철도 용산역의 참고 좌표입니다.",
+      "coordinateSource": {
+        "label": "국가철도공단 철도역 정보",
+        "url": "https://www.data.go.kr/data/15067652/fileData.do",
+        "asOf": "2025-07-11",
+        "checkedAt": "2026-11-04",
+        "license": "공공데이터포털 이용허락범위 제한 없음"
+      }
+    },
+    "C-수원": {
+      "coordinate": [
+        126.999941,
+        37.266118
+      ],
+      "coordinateKind": "existing-transfer-reference",
+      "coordinateNotice": "GTX 역의 확정 좌표가 아닌 기존 철도 수원역의 참고 좌표입니다.",
+      "coordinateSource": {
+        "label": "국가철도공단 철도역 정보",
+        "url": "https://www.data.go.kr/data/15067652/fileData.do",
+        "asOf": "2025-07-11",
+        "checkedAt": "2026-11-04",
+        "license": "공공데이터포털 이용허락범위 제한 없음"
+      }
+    }
+  }
+}

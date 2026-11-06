@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[127.4046023,35.7811212],[127.4046994,35.7809675],[127.4049906,35.7810787],[127.404892,35.78125],[127.4046023,35.7811212]]]},"properties":{"id":"way/1550494172","name":"마이산 self 주유소","kind":"retail","height":3.0,"heightSource":"levels","levels":1.0,"source":"OpenStreetMap"}}]}

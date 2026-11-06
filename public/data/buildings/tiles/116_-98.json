@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[129.0731606,35.4444772],[129.073185,35.4443776],[129.0742662,35.4445535],[129.0742417,35.4446533],[129.0731606,35.4444772]]]},"properties":{"id":"way/1389628364","name":"","kind":"apartments","height":45.0,"heightSource":"levels","levels":15.0,"source":"OpenStreetMap"}}]}

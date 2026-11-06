@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[126.8324844,35.2737501],[126.8327218,35.273667],[126.832769,35.2737568],[126.8325315,35.2738398],[126.8324844,35.2737501]]]},"properties":{"id":"way/855742895","name":"초록마을연립주택","kind":"terrace","height":12.0,"heightSource":"levels","levels":4.0,"source":"OpenStreetMap"}}]}

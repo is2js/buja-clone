@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[127.0020774,37.3476828],[127.0020859,37.3476097],[127.002154,37.3476147],[127.0021456,37.3476877],[127.0020774,37.3476828]]]},"properties":{"id":"way/1179665466","name":"공중화장실","kind":"yes","height":3.0,"heightSource":"height","levels":1.0,"source":"OpenStreetMap"}}]}

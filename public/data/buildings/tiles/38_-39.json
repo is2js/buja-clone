@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[127.5100134,36.6206424],[127.5101554,36.6204814],[127.5106458,36.62076],[127.5105038,36.620921],[127.5100134,36.6206424]]]},"properties":{"id":"way/452811528","name":"한진신세대아파트","kind":"apartments","height":45.0,"heightSource":"levels","levels":15.0,"source":"OpenStreetMap"}}]}

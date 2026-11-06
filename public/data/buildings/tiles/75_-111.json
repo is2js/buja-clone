@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[128.2616443,35.1828452],[128.2617947,35.1827353],[128.2619575,35.1828712],[128.2618053,35.1829768],[128.2616443,35.1828452]]]},"properties":{"id":"way/1384024432","name":"시골단독주택","kind":"house","height":3.0,"heightSource":"levels","levels":1.0,"source":"OpenStreetMap"}}]}

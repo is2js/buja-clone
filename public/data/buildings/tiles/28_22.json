@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[127.328814,37.8414044],[127.3288907,37.8414068],[127.3288899,37.8414472],[127.3288171,37.8414429],[127.328814,37.8414044]]]},"properties":{"id":"way/1324931818","name":"포도당","kind":"house","height":3.0,"heightSource":"levels","levels":1.0,"source":"OpenStreetMap"}}]}

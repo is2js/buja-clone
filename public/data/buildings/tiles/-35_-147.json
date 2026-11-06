@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[126.0508123,34.4786761],[126.0508316,34.4786395],[126.0508773,34.4786559],[126.0508589,34.4786893],[126.0508123,34.4786761]]]},"properties":{"id":"way/593564473","name":"가사도보건진료소","kind":"hospital","height":3.0,"heightSource":"levels","levels":1.0,"source":"OpenStreetMap"}}]}

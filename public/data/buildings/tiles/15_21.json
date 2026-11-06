@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[127.065722,37.8353722],[127.065785,37.8352885],[127.0661552,37.8354622],[127.0660921,37.8355459],[127.065722,37.8353722]]]},"properties":{"id":"way/477430691","name":"517동","kind":"apartments","height":60.0,"heightSource":"levels","levels":20.0,"source":"OpenStreetMap"}}]}

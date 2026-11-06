@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[128.5152427,35.2074039],[128.5157171,35.2069809],[128.5158003,35.2070363],[128.5153289,35.2074592],[128.5152427,35.2074039]]]},"properties":{"id":"way/845032684","name":"감천초","kind":"school","height":12.0,"heightSource":"levels","levels":4.0,"source":"OpenStreetMap"}}]}

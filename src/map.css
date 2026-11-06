@@ -1,0 +1,65 @@
+.map-surface { position:relative; overflow:hidden; width:100%; aspect-ratio: 1 / 1.3; border-radius: 16px; background:#edf1f5; touch-action:none; cursor:grab; }
+.map-surface:active { cursor:grabbing; }
+.region-map { display:block; width:100%; height:100%; }
+.map-context { fill:#e2e6ea; stroke:#fff; stroke-width:1; vector-effect:non-scaling-stroke; cursor:pointer; }
+.map-dong { stroke:#fff; stroke-width:.6; vector-effect:non-scaling-stroke; cursor:pointer; transition:fill .15s; }
+.map-dong:hover { filter:brightness(.92); }
+.region-map.has-tiles .map-context { fill-opacity:.45; }
+.region-map.has-tiles .map-dong { fill-opacity:.56; }
+.map-gu { fill:none; stroke:#536e90; stroke-opacity:.72; stroke-width:1.25; vector-effect:non-scaling-stroke; pointer-events:none; }
+.map-gu.is-focus { stroke:#152f58; stroke-width:2.6; }
+.map-route { fill:none; stroke-width:3; vector-effect:non-scaling-stroke; pointer-events:none; }
+.map-route.is-planned { stroke-dasharray:6 5; }
+.map-station { fill:white; stroke-width:3; vector-effect:non-scaling-stroke; cursor:pointer; }
+.map-label { fill:#283c53; font-weight:700; text-anchor:middle; paint-order:stroke; stroke:white; stroke-width:2.5; stroke-linejoin:round; pointer-events:none; }
+.map-attribution { position:absolute; left:2px; bottom:1px; padding:1px 4px; background:#ffffffd9; color:#4d6578; font-size:9px; }
+.map-attribution a { color:inherit; text-decoration:underline; }
+.map-loading { display:grid; place-items:center; height:100%; color:#6d7885; font-size:14px; }
+
+/* A light boundary treatment keeps the choropleth and street tiles legible. */
+.map-surface { border-radius:10px; background:#e2e6eb; }
+.region-map.has-tiles .map-context { fill-opacity:.32; }
+.region-map.has-tiles .map-dong { fill-opacity:.32; }
+.map-gu { stroke:#fff; stroke-opacity:1; stroke-width:1.8; }
+.map-gu.is-focus { stroke:#1c304f; stroke-width:2.6; }
+
+
+.map-route { stroke-linecap:round; stroke-linejoin:round; }
+.map-station-label { text-anchor:middle; font-weight:700; paint-order:stroke; stroke:#fff; stroke-width:3; stroke-linejoin:round; vector-effect:non-scaling-stroke; pointer-events:none; }
+.map-station-hit { cursor:pointer; }
+.map-station-hit:focus-visible { outline:none; filter:drop-shadow(0 0 3px #182d4e); }
+.gtx-map-detail { margin:10px 0 0; padding:12px 14px; background:#f5f7fa; border:1px solid #e2e7ef; border-radius:10px; color:#25334c; font-size:12px; line-height:1.5; }
+.gtx-map-detail header { display:flex; align-items:center; justify-content:space-between; font-size:14px; }
+.gtx-map-detail button { background:none; border:0; color:#61718a; font-size:20px; cursor:pointer; }
+.gtx-map-detail p { margin:4px 0; }
+.gtx-map-detail a { color:#385980; text-decoration:underline; }
+
+/* Highlight only the area under the pointer, including on street tiles. */
+@media (hover:hover) and (pointer:fine) {
+  .map-dong:hover { fill:#6593cb; fill-opacity:.9; stroke:#194b81; stroke-width:1.8; filter:none; }
+  .map-context:hover { fill:#b6c9de; fill-opacity:.9; stroke:#416c9d; stroke-width:1.4; }
+}
+.map-dong:active, .map-context:active { fill:#6593cb; fill-opacity:.9; stroke:#194b81; stroke-width:1.8; filter:none; }
+.gtx-map-legend { margin-top:12px; padding:10px 11px; border:1px solid #e7ebf0; border-radius:10px; background:#f8fafc; color:#536176; }
+.gtx-legend-title { display:block; color:#34455b; font-size:11px; margin-bottom:7px; }
+.gtx-legend-routes { display:flex; flex-wrap:wrap; gap:6px; }
+.gtx-legend-route { display:inline-flex; align-items:center; gap:5px; padding:4px 7px; border-radius:6px; background:#fff; border:1px solid #e7ebf0; font-size:10px; font-weight:700; white-space:nowrap; }
+.gtx-legend-route i { width:15px; height:4px; border-radius:3px; flex:none; }
+.gtx-legend-route small { color:#8c96a3; font-size:9px; font-weight:500; }
+.gtx-map-legend p { margin:7px 0 0; color:#7c8899; font-size:10px; line-height:1.45; }
+
+@media (hover:hover) and (pointer:fine) {
+  .region-map.has-tiles .map-dong:hover, .region-map.has-tiles .map-context:hover { fill-opacity:.9; }
+}
+.region-map.has-tiles .map-dong:active, .region-map.has-tiles .map-context:active { fill-opacity:.9; }
+
+/* Compact location names; synthetic examples remain clearly labelled. */
+.map-apartment-hit { cursor:pointer; }
+.map-apartment-hit:focus-visible { outline:none; filter:drop-shadow(0 0 3px #172a4b); }
+.map-apartment-hitbox { fill:transparent; pointer-events:all; }
+.map-apartment-label { fill:#2a3c50; text-anchor:middle; dominant-baseline:middle; font-weight:700; paint-order:stroke; stroke:#fff; stroke-width:3; stroke-linejoin:round; vector-effect:non-scaling-stroke; pointer-events:none; }
+.map-apartment-label.is-sample { fill:#8a5c1d; }
+.map-apartment-hit:hover .map-apartment-label, .map-apartment-hit:focus-visible .map-apartment-label { fill:#17558d; }
+
+.map-sample-terrain { pointer-events:none; }
+.map-sample-terrain ellipse { fill:#b98a4a; fill-opacity:.14; stroke:#9f6b31; stroke-width:1; stroke-dasharray:4 3; vector-effect:non-scaling-stroke; }

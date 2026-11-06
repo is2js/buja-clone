@@ -1,0 +1,15 @@
+.scene-building-hover{pointer-events:none}
+.scene-building-hover .maplibregl-popup-content,.scene-building-pinned .maplibregl-popup-content{padding:12px 14px;border:1px solid #dce4ee;border-radius:12px;box-shadow:0 5px 22px #243b532b;background:#fff}
+.scene-building-hover .maplibregl-popup-content{max-width:250px}
+.scene-building-pinned .maplibregl-popup-content{min-width:190px;max-width:min(290px,calc(100vw - 48px));padding-right:44px}
+.building-info-title{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden;color:#182b43;font-size:14px;font-weight:700;line-height:1.45;overflow-wrap:anywhere}
+.is-pinned .building-info-title{display:block;overflow:visible}
+.building-info-meta{margin:5px 0 0;color:#617187;font-size:11px;line-height:1.6}
+.building-info-hint{display:block;margin-top:6px;color:#8995a5;font-size:10px;line-height:1.4}
+.building-info-details{margin-top:9px;border-top:1px solid #edf0f4;padding-top:7px;color:#7b8797;font-size:10px;line-height:1.6}
+.building-info-details summary{cursor:pointer;color:#63748a;font-weight:600}
+.building-info-details p{margin:6px 0 0;overflow-wrap:anywhere}
+.scene-building-pinned .maplibregl-popup-close-button{width:44px;height:44px;border-radius:8px;color:#65758a;font-size:20px}
+.scene-general-building-label{max-width:146px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;border:1px solid #d7dfe7;border-radius:4px;background:#ffffffd9;color:#42546a;padding:2px 4px;font:500 10px/1.2 'IBM Plex Sans KR',sans-serif;box-shadow:0 1px 3px #243b5314;cursor:pointer}
+.scene-general-building-label:hover,.scene-general-building-label:focus-visible{background:#ecf4ff;border-color:#7faadd;color:#174c85;outline:2px solid #4384c4;outline-offset:1px}
+.scene-real-apartment-label:focus-visible{outline:2px solid #4384c4;outline-offset:2px}

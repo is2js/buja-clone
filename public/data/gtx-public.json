@@ -1,0 +1,1412 @@
+{
+  "asOf": "2026-11-04",
+  "notice": "공식 자료를 검토한 정적 스냅샷입니다. 자료별 기준일이 서로 다르며 현재 운영 상태를 보장하지 않습니다. 좌표 없는 역은 지도에 표시하지 않습니다.",
+  "routes": [
+    {
+      "id": "A",
+      "name": "GTX-A",
+      "route": "운정중앙 ↔ 동탄",
+      "status": "부분 운행 · 중앙 구간 미개통",
+      "color": "#8a4fb0",
+      "source": {
+        "label": "국가철도공단 GTX-A 사전점검 보도자료",
+        "url": "https://www.kr.or.kr/boardCnts/view.do?boardID=52&boardSeq=1122164&prntBoardID=0&prntBoardSeq=0&prntLev=0",
+        "asOf": "2026-03-03",
+        "checkedAt": "2026-11-04"
+      },
+      "stations": [
+        {
+          "id": "A-운정중앙",
+          "name": "운정중앙",
+          "status": "운행",
+          "kind": "역",
+          "source": {
+            "label": "국가철도공단 GTX-A 사전점검 보도자료",
+            "url": "https://www.kr.or.kr/boardCnts/view.do?boardID=52&boardSeq=1122164&prntBoardID=0&prntBoardSeq=0&prntLev=0",
+            "asOf": "2026-03-03",
+            "checkedAt": "2026-11-04"
+          },
+          "coordinate": null,
+          "regionCode": null
+        },
+        {
+          "id": "A-킨텍스",
+          "name": "킨텍스",
+          "status": "운행",
+          "kind": "역",
+          "source": {
+            "label": "국가철도공단 GTX-A 사전점검 보도자료",
+            "url": "https://www.kr.or.kr/boardCnts/view.do?boardID=52&boardSeq=1122164&prntBoardID=0&prntBoardSeq=0&prntLev=0",
+            "asOf": "2026-03-03",
+            "checkedAt": "2026-11-04"
+          },
+          "coordinate": null,
+          "regionCode": null
+        },
+        {
+          "id": "A-대곡",
+          "name": "대곡",
+          "status": "운행",
+          "kind": "역",
+          "source": {
+            "label": "국가철도공단 GTX-A 사전점검 보도자료",
+            "url": "https://www.kr.or.kr/boardCnts/view.do?boardID=52&boardSeq=1122164&prntBoardID=0&prntBoardSeq=0&prntLev=0",
+            "asOf": "2026-03-03",
+            "checkedAt": "2026-11-04"
+          },
+          "coordinate": null,
+          "regionCode": null
+        },
+        {
+          "id": "A-창릉",
+          "name": "창릉",
+          "status": "계획",
+          "kind": "역",
+          "source": {
+            "label": "국토교통부 2024 광역교통 대책",
+            "url": "https://www.molit.go.kr/2024plan_traffic/news/bodo_2.pdf",
+            "asOf": "2024-01-25",
+            "checkedAt": "2026-11-04"
+          },
+          "coordinate": null,
+          "regionCode": null
+        },
+        {
+          "id": "A-연신내",
+          "name": "연신내",
+          "status": "운행",
+          "kind": "역",
+          "source": {
+            "label": "국가철도공단 GTX-A 사전점검 보도자료",
+            "url": "https://www.kr.or.kr/boardCnts/view.do?boardID=52&boardSeq=1122164&prntBoardID=0&prntBoardSeq=0&prntLev=0",
+            "asOf": "2026-03-03",
+            "checkedAt": "2026-11-04"
+          },
+          "coordinate": null,
+          "regionCode": null
+        },
+        {
+          "id": "A-서울역",
+          "name": "서울역",
+          "status": "운행",
+          "kind": "역",
+          "source": {
+            "label": "국가철도공단 GTX-A 사전점검 보도자료",
+            "url": "https://www.kr.or.kr/boardCnts/view.do?boardID=52&boardSeq=1122164&prntBoardID=0&prntBoardSeq=0&prntLev=0",
+            "asOf": "2026-03-03",
+            "checkedAt": "2026-11-04"
+          },
+          "coordinate": null,
+          "regionCode": null
+        },
+        {
+          "id": "A-삼성",
+          "name": "삼성",
+          "status": "미개통",
+          "kind": "역",
+          "source": {
+            "label": "국가철도공단 GTX-A 사전점검 보도자료",
+            "url": "https://www.kr.or.kr/boardCnts/view.do?boardID=52&boardSeq=1122164&prntBoardID=0&prntBoardSeq=0&prntLev=0",
+            "asOf": "2026-03-03",
+            "checkedAt": "2026-11-04"
+          },
+          "coordinate": null,
+          "regionCode": null
+        },
+        {
+          "id": "A-수서",
+          "name": "수서",
+          "status": "운행",
+          "kind": "역",
+          "source": {
+            "label": "국가철도공단 GTX-A 사전점검 보도자료",
+            "url": "https://www.kr.or.kr/boardCnts/view.do?boardID=52&boardSeq=1122164&prntBoardID=0&prntBoardSeq=0&prntLev=0",
+            "asOf": "2026-03-03",
+            "checkedAt": "2026-11-04"
+          },
+          "coordinate": null,
+          "regionCode": null
+        },
+        {
+          "id": "A-성남",
+          "name": "성남",
+          "status": "운행",
+          "kind": "역",
+          "source": {
+            "label": "국가철도공단 GTX-A 사전점검 보도자료",
+            "url": "https://www.kr.or.kr/boardCnts/view.do?boardID=52&boardSeq=1122164&prntBoardID=0&prntBoardSeq=0&prntLev=0",
+            "asOf": "2026-03-03",
+            "checkedAt": "2026-11-04"
+          },
+          "coordinate": null,
+          "regionCode": null
+        },
+        {
+          "id": "A-구성",
+          "name": "구성",
+          "status": "운행",
+          "kind": "역",
+          "source": {
+            "label": "국가철도공단 GTX-A 사전점검 보도자료",
+            "url": "https://www.kr.or.kr/boardCnts/view.do?boardID=52&boardSeq=1122164&prntBoardID=0&prntBoardSeq=0&prntLev=0",
+            "asOf": "2026-03-03",
+            "checkedAt": "2026-11-04"
+          },
+          "coordinate": null,
+          "regionCode": null,
+          "coordinateSource": {
+            "label": "철도데이터포털 GTX-A 역사정보",
+            "url": "https://data.kric.go.kr/rips/M_01_01/detail.do?id=1279",
+            "asOf": "2024-07-15",
+            "checkedAt": "2026-11-04"
+          },
+          "coordinateNotice": "공개 재사용 조건 확인 전까지 좌표를 표시하지 않습니다. 다른 역의 위치로 대체하지 않습니다."
+        },
+        {
+          "id": "A-동탄",
+          "name": "동탄",
+          "status": "운행",
+          "kind": "역",
+          "source": {
+            "label": "국가철도공단 GTX-A 사전점검 보도자료",
+            "url": "https://www.kr.or.kr/boardCnts/view.do?boardID=52&boardSeq=1122164&prntBoardID=0&prntBoardSeq=0&prntLev=0",
+            "asOf": "2026-03-03",
+            "checkedAt": "2026-11-04"
+          },
+          "coordinate": null,
+          "regionCode": null,
+          "coordinateSource": {
+            "label": "철도데이터포털 GTX-A 역사정보",
+            "url": "https://data.kric.go.kr/rips/M_01_01/detail.do?id=1279",
+            "asOf": "2024-04-12",
+            "checkedAt": "2026-11-04"
+          },
+          "coordinateNotice": "공개 재사용 조건 확인 전까지 좌표를 표시하지 않습니다. 다른 역의 위치로 대체하지 않습니다."
+        }
+      ],
+      "segments": [
+        {
+          "from": "A-운정중앙",
+          "to": "A-킨텍스",
+          "status": "운행",
+          "source": {
+            "label": "국가철도공단 GTX-A 사전점검 보도자료",
+            "url": "https://www.kr.or.kr/boardCnts/view.do?boardID=52&boardSeq=1122164&prntBoardID=0&prntBoardSeq=0&prntLev=0",
+            "asOf": "2026-03-03",
+            "checkedAt": "2026-11-04"
+          }
+        },
+        {
+          "from": "A-킨텍스",
+          "to": "A-대곡",
+          "status": "운행",
+          "source": {
+            "label": "국가철도공단 GTX-A 사전점검 보도자료",
+            "url": "https://www.kr.or.kr/boardCnts/view.do?boardID=52&boardSeq=1122164&prntBoardID=0&prntBoardSeq=0&prntLev=0",
+            "asOf": "2026-03-03",
+            "checkedAt": "2026-11-04"
+          }
+        },
+        {
+          "from": "A-대곡",
+          "to": "A-창릉",
+          "status": "운행",
+          "source": {
+            "label": "국가철도공단 GTX-A 사전점검 보도자료",
+            "url": "https://www.kr.or.kr/boardCnts/view.do?boardID=52&boardSeq=1122164&prntBoardID=0&prntBoardSeq=0&prntLev=0",
+            "asOf": "2026-03-03",
+            "checkedAt": "2026-11-04"
+          },
+          "note": "창릉역 정차 개시 여부와 구간 운행은 별개"
+        },
+        {
+          "from": "A-창릉",
+          "to": "A-연신내",
+          "status": "운행",
+          "source": {
+            "label": "국가철도공단 GTX-A 사전점검 보도자료",
+            "url": "https://www.kr.or.kr/boardCnts/view.do?boardID=52&boardSeq=1122164&prntBoardID=0&prntBoardSeq=0&prntLev=0",
+            "asOf": "2026-03-03",
+            "checkedAt": "2026-11-04"
+          },
+          "note": "창릉역 정차 개시 여부와 구간 운행은 별개"
+        },
+        {
+          "from": "A-연신내",
+          "to": "A-서울역",
+          "status": "운행",
+          "source": {
+            "label": "국가철도공단 GTX-A 사전점검 보도자료",
+            "url": "https://www.kr.or.kr/boardCnts/view.do?boardID=52&boardSeq=1122164&prntBoardID=0&prntBoardSeq=0&prntLev=0",
+            "asOf": "2026-03-03",
+            "checkedAt": "2026-11-04"
+          }
+        },
+        {
+          "from": "A-서울역",
+          "to": "A-삼성",
+          "status": "미개통",
+          "source": {
+            "label": "국가철도공단 GTX-A 사전점검 보도자료",
+            "url": "https://www.kr.or.kr/boardCnts/view.do?boardID=52&boardSeq=1122164&prntBoardID=0&prntBoardSeq=0&prntLev=0",
+            "asOf": "2026-03-03",
+            "checkedAt": "2026-11-04"
+          }
+        },
+        {
+          "from": "A-삼성",
+          "to": "A-수서",
+          "status": "미개통",
+          "source": {
+            "label": "국가철도공단 GTX-A 사전점검 보도자료",
+            "url": "https://www.kr.or.kr/boardCnts/view.do?boardID=52&boardSeq=1122164&prntBoardID=0&prntBoardSeq=0&prntLev=0",
+            "asOf": "2026-03-03",
+            "checkedAt": "2026-11-04"
+          }
+        },
+        {
+          "from": "A-수서",
+          "to": "A-성남",
+          "status": "운행",
+          "source": {
+            "label": "국가철도공단 GTX-A 사전점검 보도자료",
+            "url": "https://www.kr.or.kr/boardCnts/view.do?boardID=52&boardSeq=1122164&prntBoardID=0&prntBoardSeq=0&prntLev=0",
+            "asOf": "2026-03-03",
+            "checkedAt": "2026-11-04"
+          }
+        },
+        {
+          "from": "A-성남",
+          "to": "A-구성",
+          "status": "운행",
+          "source": {
+            "label": "국가철도공단 GTX-A 사전점검 보도자료",
+            "url": "https://www.kr.or.kr/boardCnts/view.do?boardID=52&boardSeq=1122164&prntBoardID=0&prntBoardSeq=0&prntLev=0",
+            "asOf": "2026-03-03",
+            "checkedAt": "2026-11-04"
+          }
+        },
+        {
+          "from": "A-구성",
+          "to": "A-동탄",
+          "status": "운행",
+          "source": {
+            "label": "국가철도공단 GTX-A 사전점검 보도자료",
+            "url": "https://www.kr.or.kr/boardCnts/view.do?boardID=52&boardSeq=1122164&prntBoardID=0&prntBoardSeq=0&prntLev=0",
+            "asOf": "2026-03-03",
+            "checkedAt": "2026-11-04"
+          }
+        }
+      ],
+      "extensions": [
+        {
+          "name": "동탄 ~ 평택지제",
+          "status": "구상·변경 가능",
+          "source": {
+            "label": "국토교통부 2024 광역교통 대책",
+            "url": "https://www.molit.go.kr/2024plan_traffic/news/bodo_2.pdf",
+            "asOf": "2024-01-25",
+            "checkedAt": "2026-11-04"
+          }
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "name": "GTX-B",
+      "route": "인천대입구 ↔ 마석",
+      "status": "사업 추진 중 · 구간별 상이",
+      "color": "#14897a",
+      "source": {
+        "label": "국가철도공단 광역철도 사업현황",
+        "url": "https://www.kr.or.kr/sub/info.do?m=05010402",
+        "asOf": "2026-09",
+        "checkedAt": "2026-11-04"
+      },
+      "stations": [
+        {
+          "id": "B-인천대입구",
+          "name": "인천대입구",
+          "status": "계획",
+          "kind": "역",
+          "source": {
+            "label": "부천시 GTX-B 사업개요·노선도",
+            "url": "https://bucheon.go.kr/site/homepage/menu/viewMenu?menuid=148006006003005001",
+            "asOf": "2026-04-22",
+            "checkedAt": "2026-11-04"
+          },
+          "coordinate": null,
+          "regionCode": null
+        },
+        {
+          "id": "B-인천시청",
+          "name": "인천시청",
+          "status": "계획",
+          "kind": "역",
+          "source": {
+            "label": "부천시 GTX-B 사업개요·노선도",
+            "url": "https://bucheon.go.kr/site/homepage/menu/viewMenu?menuid=148006006003005001",
+            "asOf": "2026-04-22",
+            "checkedAt": "2026-11-04"
+          },
+          "coordinate": null,
+          "regionCode": null
+        },
+        {
+          "id": "B-부평",
+          "name": "부평",
+          "status": "계획",
+          "kind": "역",
+          "source": {
+            "label": "부천시 GTX-B 사업개요·노선도",
+            "url": "https://bucheon.go.kr/site/homepage/menu/viewMenu?menuid=148006006003005001",
+            "asOf": "2026-04-22",
+            "checkedAt": "2026-11-04"
+          },
+          "coordinate": null,
+          "regionCode": null
+        },
+        {
+          "id": "B-부천종합운동장",
+          "name": "부천종합운동장",
+          "status": "계획",
+          "kind": "역",
+          "source": {
+            "label": "부천시 GTX-B 사업개요·노선도",
+            "url": "https://bucheon.go.kr/site/homepage/menu/viewMenu?menuid=148006006003005001",
+            "asOf": "2026-04-22",
+            "checkedAt": "2026-11-04"
+          },
+          "coordinate": null,
+          "regionCode": null
+        },
+        {
+          "id": "B-신도림",
+          "name": "신도림",
+          "status": "계획",
+          "kind": "역",
+          "source": {
+            "label": "부천시 GTX-B 사업개요·노선도",
+            "url": "https://bucheon.go.kr/site/homepage/menu/viewMenu?menuid=148006006003005001",
+            "asOf": "2026-04-22",
+            "checkedAt": "2026-11-04"
+          },
+          "coordinate": null,
+          "regionCode": null
+        },
+        {
+          "id": "B-여의도",
+          "name": "여의도",
+          "status": "계획",
+          "kind": "역",
+          "source": {
+            "label": "부천시 GTX-B 사업개요·노선도",
+            "url": "https://bucheon.go.kr/site/homepage/menu/viewMenu?menuid=148006006003005001",
+            "asOf": "2026-04-22",
+            "checkedAt": "2026-11-04"
+          },
+          "coordinate": null,
+          "regionCode": null
+        },
+        {
+          "id": "B-용산",
+          "name": "용산",
+          "status": "계획",
+          "kind": "역",
+          "source": {
+            "label": "부천시 GTX-B 사업개요·노선도",
+            "url": "https://bucheon.go.kr/site/homepage/menu/viewMenu?menuid=148006006003005001",
+            "asOf": "2026-04-22",
+            "checkedAt": "2026-11-04"
+          },
+          "coordinate": null,
+          "regionCode": null
+        },
+        {
+          "id": "B-서울역",
+          "name": "서울역",
+          "status": "계획",
+          "kind": "역",
+          "source": {
+            "label": "부천시 GTX-B 사업개요·노선도",
+            "url": "https://bucheon.go.kr/site/homepage/menu/viewMenu?menuid=148006006003005001",
+            "asOf": "2026-04-22",
+            "checkedAt": "2026-11-04"
+          },
+          "coordinate": null,
+          "regionCode": null
+        },
+        {
+          "id": "B-청량리",
+          "name": "청량리",
+          "status": "계획",
+          "kind": "역",
+          "source": {
+            "label": "부천시 GTX-B 사업개요·노선도",
+            "url": "https://bucheon.go.kr/site/homepage/menu/viewMenu?menuid=148006006003005001",
+            "asOf": "2026-04-22",
+            "checkedAt": "2026-11-04"
+          },
+          "coordinate": null,
+          "regionCode": null
+        },
+        {
+          "id": "B-상봉",
+          "name": "상봉",
+          "status": "계획",
+          "kind": "역",
+          "source": {
+            "label": "부천시 GTX-B 사업개요·노선도",
+            "url": "https://bucheon.go.kr/site/homepage/menu/viewMenu?menuid=148006006003005001",
+            "asOf": "2026-04-22",
+            "checkedAt": "2026-11-04"
+          },
+          "coordinate": null,
+          "regionCode": null
+        },
+        {
+          "id": "B-별내",
+          "name": "별내",
+          "status": "계획",
+          "kind": "역",
+          "source": {
+            "label": "부천시 GTX-B 사업개요·노선도",
+            "url": "https://bucheon.go.kr/site/homepage/menu/viewMenu?menuid=148006006003005001",
+            "asOf": "2026-04-22",
+            "checkedAt": "2026-11-04"
+          },
+          "coordinate": null,
+          "regionCode": null
+        },
+        {
+          "id": "B-왕숙",
+          "name": "왕숙",
+          "status": "계획",
+          "kind": "역",
+          "source": {
+            "label": "부천시 GTX-B 사업개요·노선도",
+            "url": "https://bucheon.go.kr/site/homepage/menu/viewMenu?menuid=148006006003005001",
+            "asOf": "2026-04-22",
+            "checkedAt": "2026-11-04"
+          },
+          "coordinate": null,
+          "regionCode": null
+        },
+        {
+          "id": "B-평내호평",
+          "name": "평내호평",
+          "status": "계획",
+          "kind": "역",
+          "source": {
+            "label": "부천시 GTX-B 사업개요·노선도",
+            "url": "https://bucheon.go.kr/site/homepage/menu/viewMenu?menuid=148006006003005001",
+            "asOf": "2026-04-22",
+            "checkedAt": "2026-11-04"
+          },
+          "coordinate": null,
+          "regionCode": null
+        },
+        {
+          "id": "B-마석",
+          "name": "마석",
+          "status": "계획",
+          "kind": "역",
+          "source": {
+            "label": "부천시 GTX-B 사업개요·노선도",
+            "url": "https://bucheon.go.kr/site/homepage/menu/viewMenu?menuid=148006006003005001",
+            "asOf": "2026-04-22",
+            "checkedAt": "2026-11-04"
+          },
+          "coordinate": null,
+          "regionCode": null
+        }
+      ],
+      "segments": [
+        {
+          "from": "B-인천대입구",
+          "to": "B-인천시청",
+          "status": "미상",
+          "source": {
+            "label": "부천시 GTX-B 사업개요·노선도",
+            "url": "https://bucheon.go.kr/site/homepage/menu/viewMenu?menuid=148006006003005001",
+            "asOf": "2026-04-22",
+            "checkedAt": "2026-11-04"
+          },
+          "note": "개별 구간 공정 확인 필요"
+        },
+        {
+          "from": "B-인천시청",
+          "to": "B-부평",
+          "status": "미상",
+          "source": {
+            "label": "부천시 GTX-B 사업개요·노선도",
+            "url": "https://bucheon.go.kr/site/homepage/menu/viewMenu?menuid=148006006003005001",
+            "asOf": "2026-04-22",
+            "checkedAt": "2026-11-04"
+          },
+          "note": "개별 구간 공정 확인 필요"
+        },
+        {
+          "from": "B-부평",
+          "to": "B-부천종합운동장",
+          "status": "미상",
+          "source": {
+            "label": "부천시 GTX-B 사업개요·노선도",
+            "url": "https://bucheon.go.kr/site/homepage/menu/viewMenu?menuid=148006006003005001",
+            "asOf": "2026-04-22",
+            "checkedAt": "2026-11-04"
+          },
+          "note": "개별 구간 공정 확인 필요"
+        },
+        {
+          "from": "B-부천종합운동장",
+          "to": "B-신도림",
+          "status": "미상",
+          "source": {
+            "label": "부천시 GTX-B 사업개요·노선도",
+            "url": "https://bucheon.go.kr/site/homepage/menu/viewMenu?menuid=148006006003005001",
+            "asOf": "2026-04-22",
+            "checkedAt": "2026-11-04"
+          },
+          "note": "개별 구간 공정 확인 필요"
+        },
+        {
+          "from": "B-신도림",
+          "to": "B-여의도",
+          "status": "미상",
+          "source": {
+            "label": "부천시 GTX-B 사업개요·노선도",
+            "url": "https://bucheon.go.kr/site/homepage/menu/viewMenu?menuid=148006006003005001",
+            "asOf": "2026-04-22",
+            "checkedAt": "2026-11-04"
+          },
+          "note": "개별 구간 공정 확인 필요"
+        },
+        {
+          "from": "B-여의도",
+          "to": "B-용산",
+          "status": "미상",
+          "source": {
+            "label": "부천시 GTX-B 사업개요·노선도",
+            "url": "https://bucheon.go.kr/site/homepage/menu/viewMenu?menuid=148006006003005001",
+            "asOf": "2026-04-22",
+            "checkedAt": "2026-11-04"
+          },
+          "note": "개별 구간 공정 확인 필요"
+        },
+        {
+          "from": "B-용산",
+          "to": "B-서울역",
+          "status": "공사 중",
+          "source": {
+            "label": "국가철도공단 광역철도 사업현황",
+            "url": "https://www.kr.or.kr/sub/info.do?m=05010402",
+            "asOf": "2026-09",
+            "checkedAt": "2026-11-04"
+          }
+        },
+        {
+          "from": "B-서울역",
+          "to": "B-청량리",
+          "status": "공사 중",
+          "source": {
+            "label": "국가철도공단 광역철도 사업현황",
+            "url": "https://www.kr.or.kr/sub/info.do?m=05010402",
+            "asOf": "2026-09",
+            "checkedAt": "2026-11-04"
+          }
+        },
+        {
+          "from": "B-청량리",
+          "to": "B-상봉",
+          "status": "공사 중",
+          "source": {
+            "label": "국가철도공단 광역철도 사업현황",
+            "url": "https://www.kr.or.kr/sub/info.do?m=05010402",
+            "asOf": "2026-09",
+            "checkedAt": "2026-11-04"
+          }
+        },
+        {
+          "from": "B-상봉",
+          "to": "B-별내",
+          "status": "미상",
+          "source": {
+            "label": "부천시 GTX-B 사업개요·노선도",
+            "url": "https://bucheon.go.kr/site/homepage/menu/viewMenu?menuid=148006006003005001",
+            "asOf": "2026-04-22",
+            "checkedAt": "2026-11-04"
+          },
+          "note": "개별 구간 공정 확인 필요"
+        },
+        {
+          "from": "B-별내",
+          "to": "B-왕숙",
+          "status": "미상",
+          "source": {
+            "label": "부천시 GTX-B 사업개요·노선도",
+            "url": "https://bucheon.go.kr/site/homepage/menu/viewMenu?menuid=148006006003005001",
+            "asOf": "2026-04-22",
+            "checkedAt": "2026-11-04"
+          },
+          "note": "개별 구간 공정 확인 필요"
+        },
+        {
+          "from": "B-왕숙",
+          "to": "B-평내호평",
+          "status": "미상",
+          "source": {
+            "label": "부천시 GTX-B 사업개요·노선도",
+            "url": "https://bucheon.go.kr/site/homepage/menu/viewMenu?menuid=148006006003005001",
+            "asOf": "2026-04-22",
+            "checkedAt": "2026-11-04"
+          },
+          "note": "개별 구간 공정 확인 필요"
+        },
+        {
+          "from": "B-평내호평",
+          "to": "B-마석",
+          "status": "미상",
+          "source": {
+            "label": "부천시 GTX-B 사업개요·노선도",
+            "url": "https://bucheon.go.kr/site/homepage/menu/viewMenu?menuid=148006006003005001",
+            "asOf": "2026-04-22",
+            "checkedAt": "2026-11-04"
+          },
+          "note": "개별 구간 공정 확인 필요"
+        }
+      ],
+      "extensions": [
+        {
+          "name": "마석 ~ 춘천",
+          "status": "구상·변경 가능",
+          "source": {
+            "label": "국토교통부 2024 광역교통 대책",
+            "url": "https://www.molit.go.kr/2024plan_traffic/news/bodo_2.pdf",
+            "asOf": "2024-01-25",
+            "checkedAt": "2026-11-04"
+          }
+        }
+      ]
+    },
+    {
+      "id": "C",
+      "name": "GTX-C",
+      "route": "덕정 ↔ 수원 · 상록수 지선",
+      "status": "2026.09 기준 착공 예정",
+      "color": "#b06b16",
+      "source": {
+        "label": "국가철도공단 광역철도 사업현황",
+        "url": "https://www.kr.or.kr/sub/info.do?m=05010402",
+        "asOf": "2026-09",
+        "checkedAt": "2026-11-04"
+      },
+      "stations": [
+        {
+          "id": "C-덕정",
+          "name": "덕정",
+          "status": "계획",
+          "kind": "역",
+          "source": {
+            "label": "국토교통부 2024 광역교통 대책",
+            "url": "https://www.molit.go.kr/2024plan_traffic/news/bodo_2.pdf",
+            "asOf": "2024-01-25",
+            "checkedAt": "2026-11-04"
+          },
+          "coordinate": null,
+          "regionCode": null
+        },
+        {
+          "id": "C-의정부",
+          "name": "의정부",
+          "status": "계획",
+          "kind": "역",
+          "source": {
+            "label": "국토교통부 2024 광역교통 대책",
+            "url": "https://www.molit.go.kr/2024plan_traffic/news/bodo_2.pdf",
+            "asOf": "2024-01-25",
+            "checkedAt": "2026-11-04"
+          },
+          "coordinate": null,
+          "regionCode": null
+        },
+        {
+          "id": "C-창동",
+          "name": "창동",
+          "status": "계획",
+          "kind": "역",
+          "source": {
+            "label": "국토교통부 2024 광역교통 대책",
+            "url": "https://www.molit.go.kr/2024plan_traffic/news/bodo_2.pdf",
+            "asOf": "2024-01-25",
+            "checkedAt": "2026-11-04"
+          },
+          "coordinate": null,
+          "regionCode": null
+        },
+        {
+          "id": "C-광운대",
+          "name": "광운대",
+          "status": "계획",
+          "kind": "역",
+          "source": {
+            "label": "국토교통부 2024 광역교통 대책",
+            "url": "https://www.molit.go.kr/2024plan_traffic/news/bodo_2.pdf",
+            "asOf": "2024-01-25",
+            "checkedAt": "2026-11-04"
+          },
+          "coordinate": null,
+          "regionCode": null
+        },
+        {
+          "id": "C-청량리",
+          "name": "청량리",
+          "status": "계획",
+          "kind": "역",
+          "source": {
+            "label": "국토교통부 2024 광역교통 대책",
+            "url": "https://www.molit.go.kr/2024plan_traffic/news/bodo_2.pdf",
+            "asOf": "2024-01-25",
+            "checkedAt": "2026-11-04"
+          },
+          "coordinate": null,
+          "regionCode": null
+        },
+        {
+          "id": "C-왕십리",
+          "name": "왕십리",
+          "status": "계획",
+          "kind": "역",
+          "source": {
+            "label": "의왕시 GTX-C 사업개요",
+            "url": "https://www.uiwang.go.kr/GTXC",
+            "asOf": "2024-09",
+            "checkedAt": "2026-11-04"
+          },
+          "coordinate": null,
+          "regionCode": null
+        },
+        {
+          "id": "C-삼성",
+          "name": "삼성",
+          "status": "계획",
+          "kind": "역",
+          "source": {
+            "label": "국토교통부 2024 광역교통 대책",
+            "url": "https://www.molit.go.kr/2024plan_traffic/news/bodo_2.pdf",
+            "asOf": "2024-01-25",
+            "checkedAt": "2026-11-04"
+          },
+          "coordinate": null,
+          "regionCode": null
+        },
+        {
+          "id": "C-양재",
+          "name": "양재",
+          "status": "계획",
+          "kind": "역",
+          "source": {
+            "label": "국토교통부 2024 광역교통 대책",
+            "url": "https://www.molit.go.kr/2024plan_traffic/news/bodo_2.pdf",
+            "asOf": "2024-01-25",
+            "checkedAt": "2026-11-04"
+          },
+          "coordinate": null,
+          "regionCode": null
+        },
+        {
+          "id": "C-정부과천청사",
+          "name": "정부과천청사",
+          "status": "계획",
+          "kind": "역",
+          "source": {
+            "label": "국토교통부 2024 광역교통 대책",
+            "url": "https://www.molit.go.kr/2024plan_traffic/news/bodo_2.pdf",
+            "asOf": "2024-01-25",
+            "checkedAt": "2026-11-04"
+          },
+          "coordinate": null,
+          "regionCode": null
+        },
+        {
+          "id": "C-인덕원",
+          "name": "인덕원",
+          "status": "계획",
+          "kind": "역",
+          "source": {
+            "label": "의왕시 GTX-C 사업개요",
+            "url": "https://www.uiwang.go.kr/GTXC",
+            "asOf": "2024-09",
+            "checkedAt": "2026-11-04"
+          },
+          "coordinate": null,
+          "regionCode": null
+        },
+        {
+          "id": "C-금정",
+          "name": "금정",
+          "status": "계획",
+          "kind": "역",
+          "source": {
+            "label": "국토교통부 2024 광역교통 대책",
+            "url": "https://www.molit.go.kr/2024plan_traffic/news/bodo_2.pdf",
+            "asOf": "2024-01-25",
+            "checkedAt": "2026-11-04"
+          },
+          "coordinate": null,
+          "regionCode": null
+        },
+        {
+          "id": "C-의왕",
+          "name": "의왕",
+          "status": "계획",
+          "kind": "역",
+          "source": {
+            "label": "의왕시 GTX-C 사업개요",
+            "url": "https://www.uiwang.go.kr/GTXC",
+            "asOf": "2024-09",
+            "checkedAt": "2026-11-04"
+          },
+          "coordinate": null,
+          "regionCode": null
+        },
+        {
+          "id": "C-수원",
+          "name": "수원",
+          "status": "계획",
+          "kind": "역",
+          "source": {
+            "label": "국토교통부 2024 광역교통 대책",
+            "url": "https://www.molit.go.kr/2024plan_traffic/news/bodo_2.pdf",
+            "asOf": "2024-01-25",
+            "checkedAt": "2026-11-04"
+          },
+          "coordinate": null,
+          "regionCode": null
+        },
+        {
+          "id": "C-상록수",
+          "name": "상록수",
+          "status": "계획",
+          "kind": "역",
+          "source": {
+            "label": "의왕시 GTX-C 사업개요",
+            "url": "https://www.uiwang.go.kr/GTXC",
+            "asOf": "2024-09",
+            "checkedAt": "2026-11-04"
+          },
+          "coordinate": null,
+          "regionCode": null
+        }
+      ],
+      "segments": [
+        {
+          "from": "C-덕정",
+          "to": "C-의정부",
+          "status": "미상",
+          "source": {
+            "label": "국가철도공단 광역철도 사업현황",
+            "url": "https://www.kr.or.kr/sub/info.do?m=05010402",
+            "asOf": "2026-09",
+            "checkedAt": "2026-11-04"
+          },
+          "note": "2026년 9월 사업현황: 착공 예정, 구간별 세부 상태 확인 필요"
+        },
+        {
+          "from": "C-의정부",
+          "to": "C-창동",
+          "status": "미상",
+          "source": {
+            "label": "국가철도공단 광역철도 사업현황",
+            "url": "https://www.kr.or.kr/sub/info.do?m=05010402",
+            "asOf": "2026-09",
+            "checkedAt": "2026-11-04"
+          },
+          "note": "2026년 9월 사업현황: 착공 예정, 구간별 세부 상태 확인 필요"
+        },
+        {
+          "from": "C-창동",
+          "to": "C-광운대",
+          "status": "미상",
+          "source": {
+            "label": "국가철도공단 광역철도 사업현황",
+            "url": "https://www.kr.or.kr/sub/info.do?m=05010402",
+            "asOf": "2026-09",
+            "checkedAt": "2026-11-04"
+          },
+          "note": "2026년 9월 사업현황: 착공 예정, 구간별 세부 상태 확인 필요"
+        },
+        {
+          "from": "C-광운대",
+          "to": "C-청량리",
+          "status": "미상",
+          "source": {
+            "label": "국가철도공단 광역철도 사업현황",
+            "url": "https://www.kr.or.kr/sub/info.do?m=05010402",
+            "asOf": "2026-09",
+            "checkedAt": "2026-11-04"
+          },
+          "note": "2026년 9월 사업현황: 착공 예정, 구간별 세부 상태 확인 필요"
+        },
+        {
+          "from": "C-청량리",
+          "to": "C-왕십리",
+          "status": "미상",
+          "source": {
+            "label": "국가철도공단 광역철도 사업현황",
+            "url": "https://www.kr.or.kr/sub/info.do?m=05010402",
+            "asOf": "2026-09",
+            "checkedAt": "2026-11-04"
+          },
+          "note": "2026년 9월 사업현황: 착공 예정, 구간별 세부 상태 확인 필요"
+        },
+        {
+          "from": "C-왕십리",
+          "to": "C-삼성",
+          "status": "미상",
+          "source": {
+            "label": "국가철도공단 광역철도 사업현황",
+            "url": "https://www.kr.or.kr/sub/info.do?m=05010402",
+            "asOf": "2026-09",
+            "checkedAt": "2026-11-04"
+          },
+          "note": "2026년 9월 사업현황: 착공 예정, 구간별 세부 상태 확인 필요"
+        },
+        {
+          "from": "C-삼성",
+          "to": "C-양재",
+          "status": "미상",
+          "source": {
+            "label": "국가철도공단 광역철도 사업현황",
+            "url": "https://www.kr.or.kr/sub/info.do?m=05010402",
+            "asOf": "2026-09",
+            "checkedAt": "2026-11-04"
+          },
+          "note": "2026년 9월 사업현황: 착공 예정, 구간별 세부 상태 확인 필요"
+        },
+        {
+          "from": "C-양재",
+          "to": "C-정부과천청사",
+          "status": "미상",
+          "source": {
+            "label": "국가철도공단 광역철도 사업현황",
+            "url": "https://www.kr.or.kr/sub/info.do?m=05010402",
+            "asOf": "2026-09",
+            "checkedAt": "2026-11-04"
+          },
+          "note": "2026년 9월 사업현황: 착공 예정, 구간별 세부 상태 확인 필요"
+        },
+        {
+          "from": "C-정부과천청사",
+          "to": "C-인덕원",
+          "status": "미상",
+          "source": {
+            "label": "국가철도공단 광역철도 사업현황",
+            "url": "https://www.kr.or.kr/sub/info.do?m=05010402",
+            "asOf": "2026-09",
+            "checkedAt": "2026-11-04"
+          },
+          "note": "2026년 9월 사업현황: 착공 예정, 구간별 세부 상태 확인 필요"
+        },
+        {
+          "from": "C-인덕원",
+          "to": "C-금정",
+          "status": "미상",
+          "source": {
+            "label": "국가철도공단 광역철도 사업현황",
+            "url": "https://www.kr.or.kr/sub/info.do?m=05010402",
+            "asOf": "2026-09",
+            "checkedAt": "2026-11-04"
+          },
+          "note": "2026년 9월 사업현황: 착공 예정, 구간별 세부 상태 확인 필요"
+        },
+        {
+          "from": "C-금정",
+          "to": "C-의왕",
+          "status": "미상",
+          "source": {
+            "label": "국가철도공단 광역철도 사업현황",
+            "url": "https://www.kr.or.kr/sub/info.do?m=05010402",
+            "asOf": "2026-09",
+            "checkedAt": "2026-11-04"
+          },
+          "note": "2026년 9월 사업현황: 착공 예정, 구간별 세부 상태 확인 필요"
+        },
+        {
+          "from": "C-의왕",
+          "to": "C-수원",
+          "status": "미상",
+          "source": {
+            "label": "국가철도공단 광역철도 사업현황",
+            "url": "https://www.kr.or.kr/sub/info.do?m=05010402",
+            "asOf": "2026-09",
+            "checkedAt": "2026-11-04"
+          },
+          "note": "2026년 9월 사업현황: 착공 예정, 구간별 세부 상태 확인 필요"
+        },
+        {
+          "from": "C-금정",
+          "to": "C-상록수",
+          "status": "미상",
+          "source": {
+            "label": "의왕시 GTX-C 사업개요",
+            "url": "https://www.uiwang.go.kr/GTXC",
+            "asOf": "2024-09",
+            "checkedAt": "2026-11-04"
+          },
+          "note": "상록수 지선; 구간 상태 확인 필요"
+        }
+      ],
+      "extensions": [
+        {
+          "name": "덕정 ~ 동두천",
+          "status": "구상·변경 가능",
+          "source": {
+            "label": "국토교통부 2024 광역교통 대책",
+            "url": "https://www.molit.go.kr/2024plan_traffic/news/bodo_2.pdf",
+            "asOf": "2024-01-25",
+            "checkedAt": "2026-11-04"
+          }
+        },
+        {
+          "name": "수원 ~ 아산",
+          "status": "구상·변경 가능",
+          "source": {
+            "label": "국토교통부 2024 광역교통 대책",
+            "url": "https://www.molit.go.kr/2024plan_traffic/news/bodo_2.pdf",
+            "asOf": "2024-01-25",
+            "checkedAt": "2026-11-04"
+          }
+        }
+      ]
+    },
+    {
+      "id": "D",
+      "name": "GTX-D",
+      "route": "김포·인천 ↔ 팔당·원주 등",
+      "status": "구상 · 변동 가능",
+      "color": "#c43d78",
+      "source": {
+        "label": "국토교통부 2024 광역교통 대책",
+        "url": "https://www.molit.go.kr/2024plan_traffic/news/bodo_2.pdf",
+        "asOf": "2024-01-25",
+        "checkedAt": "2026-11-04"
+      },
+      "stations": [
+        {
+          "id": "D-김포",
+          "name": "김포",
+          "status": "구상",
+          "kind": "계획 거점",
+          "source": {
+            "label": "국토교통부 2024 광역교통 대책",
+            "url": "https://www.molit.go.kr/2024plan_traffic/news/bodo_2.pdf",
+            "asOf": "2024-01-25",
+            "checkedAt": "2026-11-04"
+          },
+          "coordinate": null,
+          "regionCode": null
+        },
+        {
+          "id": "D-인천",
+          "name": "인천",
+          "status": "구상",
+          "kind": "계획 거점",
+          "source": {
+            "label": "국토교통부 2024 광역교통 대책",
+            "url": "https://www.molit.go.kr/2024plan_traffic/news/bodo_2.pdf",
+            "asOf": "2024-01-25",
+            "checkedAt": "2026-11-04"
+          },
+          "coordinate": null,
+          "regionCode": null
+        },
+        {
+          "id": "D-인천공항",
+          "name": "인천공항",
+          "status": "구상",
+          "kind": "계획 거점",
+          "source": {
+            "label": "국토교통부 2024 광역교통 대책",
+            "url": "https://www.molit.go.kr/2024plan_traffic/news/bodo_2.pdf",
+            "asOf": "2024-01-25",
+            "checkedAt": "2026-11-04"
+          },
+          "coordinate": null,
+          "regionCode": null
+        },
+        {
+          "id": "D-부천종합운동장",
+          "name": "부천종합운동장",
+          "status": "구상",
+          "kind": "계획 거점",
+          "source": {
+            "label": "국토교통부 2024 광역교통 대책",
+            "url": "https://www.molit.go.kr/2024plan_traffic/news/bodo_2.pdf",
+            "asOf": "2024-01-25",
+            "checkedAt": "2026-11-04"
+          },
+          "coordinate": null,
+          "regionCode": null
+        },
+        {
+          "id": "D-삼성",
+          "name": "삼성",
+          "status": "구상",
+          "kind": "계획 거점",
+          "source": {
+            "label": "국토교통부 2024 광역교통 대책",
+            "url": "https://www.molit.go.kr/2024plan_traffic/news/bodo_2.pdf",
+            "asOf": "2024-01-25",
+            "checkedAt": "2026-11-04"
+          },
+          "coordinate": null,
+          "regionCode": null
+        },
+        {
+          "id": "D-교산",
+          "name": "교산",
+          "status": "구상",
+          "kind": "계획 거점",
+          "source": {
+            "label": "국토교통부 2024 광역교통 대책",
+            "url": "https://www.molit.go.kr/2024plan_traffic/news/bodo_2.pdf",
+            "asOf": "2024-01-25",
+            "checkedAt": "2026-11-04"
+          },
+          "coordinate": null,
+          "regionCode": null
+        },
+        {
+          "id": "D-팔당",
+          "name": "팔당",
+          "status": "구상",
+          "kind": "계획 거점",
+          "source": {
+            "label": "국토교통부 2024 광역교통 대책",
+            "url": "https://www.molit.go.kr/2024plan_traffic/news/bodo_2.pdf",
+            "asOf": "2024-01-25",
+            "checkedAt": "2026-11-04"
+          },
+          "coordinate": null,
+          "regionCode": null
+        },
+        {
+          "id": "D-원주",
+          "name": "원주",
+          "status": "구상",
+          "kind": "계획 거점",
+          "source": {
+            "label": "국토교통부 2024 광역교통 대책",
+            "url": "https://www.molit.go.kr/2024plan_traffic/news/bodo_2.pdf",
+            "asOf": "2024-01-25",
+            "checkedAt": "2026-11-04"
+          },
+          "coordinate": null,
+          "regionCode": null
+        }
+      ],
+      "segments": [],
+      "extensions": [],
+      "note": "2024년 국토교통부 구상에 나타난 주요 지점만 표시하며, 확정 정차역 목록이나 실제 노선이 아닙니다."
+    },
+    {
+      "id": "E",
+      "name": "GTX-E",
+      "route": "인천공항 ↔ 덕소 등",
+      "status": "구상 · 변동 가능",
+      "color": "#986d42",
+      "source": {
+        "label": "국토교통부 2024 광역교통 대책",
+        "url": "https://www.molit.go.kr/2024plan_traffic/news/bodo_2.pdf",
+        "asOf": "2024-01-25",
+        "checkedAt": "2026-11-04"
+      },
+      "stations": [
+        {
+          "id": "E-인천공항",
+          "name": "인천공항",
+          "status": "구상",
+          "kind": "계획 거점",
+          "source": {
+            "label": "국토교통부 2024 광역교통 대책",
+            "url": "https://www.molit.go.kr/2024plan_traffic/news/bodo_2.pdf",
+            "asOf": "2024-01-25",
+            "checkedAt": "2026-11-04"
+          },
+          "coordinate": null,
+          "regionCode": null
+        },
+        {
+          "id": "E-대장",
+          "name": "대장",
+          "status": "구상",
+          "kind": "계획 거점",
+          "source": {
+            "label": "국토교통부 2024 광역교통 대책",
+            "url": "https://www.molit.go.kr/2024plan_traffic/news/bodo_2.pdf",
+            "asOf": "2024-01-25",
+            "checkedAt": "2026-11-04"
+          },
+          "coordinate": null,
+          "regionCode": null
+        },
+        {
+          "id": "E-연신내",
+          "name": "연신내",
+          "status": "구상",
+          "kind": "계획 거점",
+          "source": {
+            "label": "국토교통부 2024 광역교통 대책",
+            "url": "https://www.molit.go.kr/2024plan_traffic/news/bodo_2.pdf",
+            "asOf": "2024-01-25",
+            "checkedAt": "2026-11-04"
+          },
+          "coordinate": null,
+          "regionCode": null
+        },
+        {
+          "id": "E-광운대",
+          "name": "광운대",
+          "status": "구상",
+          "kind": "계획 거점",
+          "source": {
+            "label": "국토교통부 2024 광역교통 대책",
+            "url": "https://www.molit.go.kr/2024plan_traffic/news/bodo_2.pdf",
+            "asOf": "2024-01-25",
+            "checkedAt": "2026-11-04"
+          },
+          "coordinate": null,
+          "regionCode": null
+        },
+        {
+          "id": "E-덕소",
+          "name": "덕소",
+          "status": "구상",
+          "kind": "계획 거점",
+          "source": {
+            "label": "국토교통부 2024 광역교통 대책",
+            "url": "https://www.molit.go.kr/2024plan_traffic/news/bodo_2.pdf",
+            "asOf": "2024-01-25",
+            "checkedAt": "2026-11-04"
+          },
+          "coordinate": null,
+          "regionCode": null
+        }
+      ],
+      "segments": [],
+      "extensions": [],
+      "note": "2024년 국토교통부 구상에 나타난 주요 지점만 표시하며, 확정 정차역 목록이나 실제 노선이 아닙니다."
+    },
+    {
+      "id": "F",
+      "name": "GTX-F",
+      "route": "수도권 순환 구상",
+      "status": "구상 · 변동 가능",
+      "color": "#8eaa2b",
+      "source": {
+        "label": "국토교통부 2024 광역교통 대책",
+        "url": "https://www.molit.go.kr/2024plan_traffic/news/bodo_2.pdf",
+        "asOf": "2024-01-25",
+        "checkedAt": "2026-11-04"
+      },
+      "stations": [
+        {
+          "id": "F-의정부",
+          "name": "의정부",
+          "status": "구상",
+          "kind": "계획 거점",
+          "source": {
+            "label": "국토교통부 2024 광역교통 대책",
+            "url": "https://www.molit.go.kr/2024plan_traffic/news/bodo_2.pdf",
+            "asOf": "2024-01-25",
+            "checkedAt": "2026-11-04"
+          },
+          "coordinate": null,
+          "regionCode": null
+        },
+        {
+          "id": "F-대곡",
+          "name": "대곡",
+          "status": "구상",
+          "kind": "계획 거점",
+          "source": {
+            "label": "국토교통부 2024 광역교통 대책",
+            "url": "https://www.molit.go.kr/2024plan_traffic/news/bodo_2.pdf",
+            "asOf": "2024-01-25",
+            "checkedAt": "2026-11-04"
+          },
+          "coordinate": null,
+          "regionCode": null
+        },
+        {
+          "id": "F-수원",
+          "name": "수원",
+          "status": "구상",
+          "kind": "계획 거점",
+          "source": {
+            "label": "국토교통부 2024 광역교통 대책",
+            "url": "https://www.molit.go.kr/2024plan_traffic/news/bodo_2.pdf",
+            "asOf": "2024-01-25",
+            "checkedAt": "2026-11-04"
+          },
+          "coordinate": null,
+          "regionCode": null
+        },
+        {
+          "id": "F-교산",
+          "name": "교산",
+          "status": "구상",
+          "kind": "계획 거점",
+          "source": {
+            "label": "국토교통부 2024 광역교통 대책",
+            "url": "https://www.molit.go.kr/2024plan_traffic/news/bodo_2.pdf",
+            "asOf": "2024-01-25",
+            "checkedAt": "2026-11-04"
+          },
+          "coordinate": null,
+          "regionCode": null
+        },
+        {
+          "id": "F-왕숙2",
+          "name": "왕숙2",
+          "status": "구상",
+          "kind": "계획 거점",
+          "source": {
+            "label": "국토교통부 2024 광역교통 대책",
+            "url": "https://www.molit.go.kr/2024plan_traffic/news/bodo_2.pdf",
+            "asOf": "2024-01-25",
+            "checkedAt": "2026-11-04"
+          },
+          "coordinate": null,
+          "regionCode": null
+        },
+        {
+          "id": "F-덕소",
+          "name": "덕소",
+          "status": "구상",
+          "kind": "계획 거점",
+          "source": {
+            "label": "국토교통부 2024 광역교통 대책",
+            "url": "https://www.molit.go.kr/2024plan_traffic/news/bodo_2.pdf",
+            "asOf": "2024-01-25",
+            "checkedAt": "2026-11-04"
+          },
+          "coordinate": null,
+          "regionCode": null
+        }
+      ],
+      "segments": [],
+      "extensions": [],
+      "note": "2024년 국토교통부 구상에 나타난 주요 지점만 표시하며, 확정 정차역 목록이나 실제 노선이 아닙니다."
+    }
+  ],
+  "publicCoordinateReview": {
+    "checkedAt": "2026-11-07",
+    "withheldStations": [
+      "A-구성",
+      "A-동탄"
+    ],
+    "notice": "재사용 조건을 확인하지 못한 두 좌표를 공개용 파일에서 제외했습니다."
+  }
+}

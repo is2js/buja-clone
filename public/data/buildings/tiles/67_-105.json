@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[128.0905993,35.317287],[128.0907811,35.3172467],[128.0908535,35.3174378],[128.0906656,35.3174818],[128.0905993,35.317287]]]},"properties":{"id":"way/1238831511","name":"상가주택","kind":"house","height":6.0,"heightSource":"levels","levels":2.0,"source":"OpenStreetMap"}}]}

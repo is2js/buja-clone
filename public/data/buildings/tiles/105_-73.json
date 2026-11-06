@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[128.8651153,35.9485068],[128.865463,35.9483697],[128.8658453,35.9490914],[128.8654523,35.9491098],[128.8651153,35.9485068]]]},"properties":{"id":"way/1564498653","name":"관람대","kind":"yes","height":12.0,"heightSource":"levels","levels":4.0,"source":"OpenStreetMap"}}]}

@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[127.3248066,37.4586317],[127.3250614,37.4585625],[127.3251004,37.4586529],[127.3248455,37.4587221],[127.3248066,37.4586317]]]},"properties":{"id":"way/1098412526","name":"전원빌리지","kind":"residential","height":12.0,"heightSource":"levels","levels":4.0,"source":"OpenStreetMap"}}]}

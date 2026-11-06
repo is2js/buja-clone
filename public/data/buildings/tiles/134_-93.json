@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[129.4310136,35.5431547],[129.4311102,35.5430674],[129.4312926,35.5432158],[129.4311853,35.5432944],[129.4310136,35.5431547]]]},"properties":{"id":"way/470631470","name":"동부상가","kind":"commercial","height":6.0,"heightSource":"levels","levels":2.0,"source":"OpenStreetMap"}}]}

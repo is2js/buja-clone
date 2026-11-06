@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[127.6502829,35.2321819],[127.6503362,35.2320219],[127.650464,35.2320504],[127.6504107,35.2322103],[127.6502829,35.2321819]]]},"properties":{"id":"way/787003617","name":"종무소","kind":"yes","height":6.0,"heightSource":"levels","levels":2.0,"source":"OpenStreetMap"}}]}

@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[128.5097706,35.8287283],[128.5099129,35.8287448],[128.5099251,35.82887],[128.5097758,35.8288764],[128.5097706,35.8287283]]]},"properties":{"id":"way/468621212","name":"삼화섬유 사무실","kind":"office","height":3.0,"heightSource":"levels","levels":1.0,"source":"OpenStreetMap"}}]}

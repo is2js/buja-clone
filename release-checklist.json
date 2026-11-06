@@ -1,0 +1,8 @@
+{
+  "profile": "github-pages-public-v1",
+  "reviewedOn": "2026-11-07",
+  "geo_reuse": {"verified": true, "evidence": "public/data/SOURCES.md: SGIS/vuski CC BY 4.0 고정 커밋과 SHA-256으로 독립 재생성. 부자 중간 경계·중심점·역 매핑 제외. 공개 GTX는 gtx-public.json만 사용."},
+  "transaction_publication": {"verified": true, "evidence": "docs/pages-data-profile.md: 사용자가 지도·3D 우선 공개를 선택. RTMS 계약일 집계 두 파일과 점수는 공개 소스·산출물에서 제외하고 status withheld 빈 응답으로 대체. 로컬 자료 공개 권한을 승인하는 항목이 아님."},
+  "data_licenses": {"verified": true, "evidence": "docs/pages-data-profile.md, docs/legal-geography.md, public/data/SOURCES.md: 자료별 공식 출처·조건 확인. OSM 파생 자료는 ODbL URI와 가공 스크립트 제공, 법정 경계 출처 유지, 조건 미확인 KRIC 좌표 2곳 제외. 게시 전 실제 산출물 별도 검증."},
+  "map_provider": {"verified": true, "evidence": "docs/pages-data-profile.md: 소규모 대화형 OSM 타일 정책에 맞춰 화면 범위만 조회, 기본 캐시·Referer와 출처 유지. DEM은 AWS 공개 Terrain Tiles와 USGS 출처 표시. 비밀키·브이월드 로컬 프록시는 공개하지 않음."}
+}

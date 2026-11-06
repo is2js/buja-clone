@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[127.6509991,37.2455837],[127.6511567,37.2454955],[127.65124,37.2455813],[127.6510601,37.2456508],[127.6509991,37.2455837]]]},"properties":{"id":"way/1294649980","name":"한우리빌라","kind":"residential","height":9.0,"heightSource":"levels","levels":3.0,"source":"OpenStreetMap"}}]}

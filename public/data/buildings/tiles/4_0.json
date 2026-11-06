@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[126.8396473,37.4128512],[126.8397253,37.4125631],[126.8399567,37.4126026],[126.8398786,37.4128907],[126.8396473,37.4128512]]]},"properties":{"id":"way/469898221","name":"기숙사","kind":"dormitory","height":9.0,"heightSource":"levels","levels":3.0,"source":"OpenStreetMap"}}]}

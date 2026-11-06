@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[127.5081633,34.8857195],[127.5082104,34.8856866],[127.5082671,34.8857412],[127.5082201,34.8857741],[127.5081633,34.8857195]]]},"properties":{"id":"way/629127236","name":"화장실","kind":"yes","height":3.0,"heightSource":"levels","levels":1.0,"source":"OpenStreetMap"}}]}

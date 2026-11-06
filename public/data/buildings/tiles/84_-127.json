@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[128.4303139,34.8601739],[128.4303636,34.8601429],[128.4304197,34.8602036],[128.43037,34.8602345],[128.4303139,34.8601739]]]},"properties":{"id":"way/1124392134","name":"지게차크레인","kind":"retail","height":3.0,"heightSource":"levels","levels":1.0,"source":"OpenStreetMap"}}]}

@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[126.6377632,33.5368029],[126.6378049,33.5367611],[126.6378799,33.5368169],[126.6378366,33.5368556],[126.6377632,33.5368029]]]},"properties":{"id":"way/1150367981","name":"페이퍼룸","kind":"commercial","height":6.0,"heightSource":"levels","levels":2.0,"source":"OpenStreetMap"}}]}

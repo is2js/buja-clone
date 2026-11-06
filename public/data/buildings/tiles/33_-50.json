@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[127.4108521,36.4166868],[127.4108581,36.4165426],[127.4110888,36.4165488],[127.4110828,36.416693],[127.4108521,36.4166868]]]},"properties":{"id":"way/471661442","name":"파크팰리스","kind":"commercial","height":15.0,"heightSource":"levels","levels":5.0,"source":"OpenStreetMap"}}]}

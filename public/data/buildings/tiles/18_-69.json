@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[127.1298952,36.0366042],[127.1299925,36.0365786],[127.1300272,36.0366644],[127.1299299,36.03669],[127.1298952,36.0366042]]]},"properties":{"id":"way/1219922351","name":"봉안경당 사무실","kind":"office","height":3.0,"heightSource":"levels","levels":1.0,"source":"OpenStreetMap"}}]}

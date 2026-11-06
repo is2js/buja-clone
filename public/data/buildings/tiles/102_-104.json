@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[128.804309,35.3207517],[128.8046746,35.3198568],[128.8048994,35.3199081],[128.8045188,35.3208275],[128.804309,35.3207517]]]},"properties":{"id":"way/497896392","name":"청원한마을아파트","kind":"apartments","height":30.0,"heightSource":"levels","levels":10.0,"source":"OpenStreetMap"}}]}

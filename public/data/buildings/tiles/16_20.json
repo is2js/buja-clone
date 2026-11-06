@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[127.0740471,37.8085576],[127.0740888,37.8084553],[127.0742877,37.8085247],[127.0742368,37.8086125],[127.0740471,37.8085576]]]},"properties":{"id":"way/1113522228","name":"배송대장","kind":"yes","height":7.0,"heightSource":"height","levels":1.0,"source":"OpenStreetMap"}}]}

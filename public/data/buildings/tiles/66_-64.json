@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[128.0778172,36.1364263],[128.0781069,36.1364306],[128.078123,36.1365476],[128.0778333,36.1365476],[128.0778172,36.1364263]]]},"properties":{"id":"way/468990953","name":"학사마을D동","kind":"residential","height":9.0,"heightSource":"levels","levels":3.0,"source":"OpenStreetMap"}}]}

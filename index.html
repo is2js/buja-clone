@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="행정동·법정동 지도와 공개 부동산 자료를 살펴보는 정적 프로토타입">
+  <meta name="theme-color" content="#f2f4f7">
+  <title>부자 부동산자본주의</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script type="module" src="/src/main.js"></script>
+</head>
+<body>
+<div class="app-shell" x-data="bujaApp" x-cloak>
+  <header class="top"><div class="brand"><span class="logo">부자</span><span class="tagline">부동산<b>자본주의</b></span></div><span class="prototype-badge">프로토타입</span></header>
+  <p class="project-disclaimer">학습·연구용 독립 프로토타입으로, 부자 및 임장가자와 제휴하거나 운영하지 않습니다.</p>
+  <main>
+    <div class="loading" x-show="loading">지도를 준비하고 있어요.</div>
+    <div class="loading error" x-show="error" x-text="error"></div>
+    <section x-show="!loading && !error && tab === 'map'" class="page-stack map-page" :class="{'map-expanded':mapExpanded}" x-ref="mapPage" :role="mapExpanded ? 'dialog' : null" :aria-modal="mapExpanded ? 'true' : null" aria-label="지도">
+      <details class="map-region-picker" :open="!mapExpanded">
+        <summary><span><b x-text="areaName"></b><span x-show="selectedGu" x-text="' · ' + (data.regions[selectedGu]?.name || '')"></span><span x-show="selectedDong" x-text="' · ' + (data.legalByCode?.[selectedDong]?.name || data.regions[selectedDong]?.name || '')"></span></span><span>지역 선택⌄</span></summary>
+        <div class="map-region-options">
+      <div class="region-criteria"><label for="boundary-mode">지역 기준</label><select id="boundary-mode" aria-label="지역 기준" :value="boundaryMode" @change="setBoundaryMode($event.target.value)"><option value="legal">법정동</option><option value="admin">행정동</option></select></div>
+      <div class="area-tabs" role="tablist" aria-label="시도 선택">
+        <template x-for="item in data.areas" :key="item.code"><button type="button" role="tab" :aria-selected="area === item.code" :class="{on: area === item.code}" @click="setArea(item.code)" x-text="item.name"></button></template>
+      </div>
+      <template x-if="area === '41'">
+        <div class="area-tabs subarea-tabs" x-ref="cityTabs" role="tablist" aria-label="경기 시·군 선택">
+          <button type="button" role="tab" :aria-selected="!selectedCity" :class="{on: !selectedCity}" @click="resetCategoryMap()">경기 전체</button>
+          <template x-for="city in gyeonggiCities" :key="city.code"><button type="button" role="tab" :aria-selected="selectedCity === city.code" :class="{on: selectedCity === city.code}" @click="selectCity(city)" x-text="city.name"></button></template>
+        </div>
+      </template>
+      <template x-if="area !== '41'">
+        <div class="area-tabs subarea-tabs" x-ref="gyeonggiTabs" role="tablist" aria-label="시·군·구 선택">
+          <button type="button" role="tab" :aria-selected="!selectedGu" :class="{on: !selectedGu}" @click="resetCategoryMap()" x-text="`${areaName} 전체`"></button>
+          <template x-for="region in gyeonggiDistricts" :key="region.code"><button type="button" role="tab" :aria-selected="selectedGu === region.code" :class="{on: selectedGu === region.code}" @click="selectRegionTab(region)" x-text="region.name"></button></template>
+        </div>
+      </template>
+      <div class="area-tabs subarea-tabs" x-ref="districtTabs" x-show="area === '41' && currentCity?.districts.length > 1" role="tablist" aria-label="경기 구 선택">
+        <button type="button" role="tab" :aria-selected="!selectedGu" :class="{on: !selectedGu}" @click="backToDistrictList()" x-text="`${currentCity?.name || ''} 전체`"></button>
+        <template x-for="region in (currentCity?.districts || [])" :key="region.code"><button type="button" role="tab" :aria-selected="selectedGu === region.code" :class="{on: selectedGu === region.code}" @click="selectRegionTab(region)" x-text="region.name.replace(/^.+?시\s*/, '')"></button></template>
+      </div>
+      <p class="boundary-notice" x-show="boundaryMode === 'legal'" x-text="legalWarning || legalBasis"></p>
+      <div class="area-tabs dong-tabs" x-ref="dongTabs" x-show="selectedGu" role="tablist" :aria-label="boundaryMode === 'legal' ? '법정동 선택' : '행정동 선택'">
+        <button type="button" role="tab" :aria-selected="!selectedDong" :class="{on: !selectedDong}" @click="clearCategoryDetails(); focusGu(selectedGu)" x-text="`${data.regions[selectedGu]?.name || ''} 전체`"></button>
+        <template x-for="region in focusDongs" :key="region.code"><button type="button" role="tab" :aria-selected="selectedDong === region.code" :class="{on: selectedDong === region.code}" @click="selectRegionTab(region)" x-text="region.name"></button></template>
+      </div>
+        </div>
+      </details>
+      <div class="sample-banner"><span class="sample-dot"></span><div><b x-text="isPublicPreview ? '전국 지도·3D 건물 공개 시연' : '공개 실거래 자료 기준'"></b><small x-text="freshness"></small></div><span class="sample-label" x-text="isPublicPreview ? '지도 데모' : '공개 자료'"></span></div>
+      <div class="brief" x-show="!isPublicPreview">
+        <template x-for="card in summaryCards" :key="card.label"><button type="button" @click="openRegion(card.region?.code)" :disabled="!card.region"><small x-text="card.label"></small><b x-text="card.region?.name || '–'"></b><em :class="{'up-text':card.up}" x-text="card.value"></em></button></template>
+      </div>
+      <div class="map-card">
+        <div class="map-heading"><div class="area-now"><b x-text="areaName"></b><small x-text="`${(boundaryMode === 'legal' ? (data.legalRegions || []).filter(r => r.area === area).length : areaDongs.length).toLocaleString()}개 ${boundaryMode === 'legal' ? '법정 읍·면·동' : '행정 읍·면·동'}`"></small></div><span class="map-mode-label" x-text="mapDataMode === 'sample' ? '가상 예시' : '공개 자료'"></span></div>
+        <div class="map-primary-tools" aria-label="지도 보기 설정">
+          <div class="map-view-switch" aria-label="지도 입체 보기"><button type="button" :class="{active: mapDisplay === '2d'}" :aria-pressed="mapDisplay === '2d'" @click="setMapDisplay('2d')">2D</button><button type="button" :class="{active: mapDisplay === '3d'}" :aria-pressed="mapDisplay === '3d'" @click="setMapDisplay('3d')">3D</button></div>
+          <select class="map-mode" aria-label="지도 색 기준" x-model="metric" @change="renderMap()"><option value="score">부분 점수</option><option value="price">아파트 시세</option><option value="change1">1개월 변동률</option><option value="change3">3개월 변동률</option><option value="change6">6개월 변동률</option><option value="yoy">1년 변동률</option><option value="transactions">3개월 거래량</option><option value="jeonse">전세가율</option><option value="peak">최고가 대비</option></select>
+          <button type="button" class="map-tool-button" :class="{active:layersOpen}" :aria-expanded="layersOpen" aria-controls="map-layers-panel" @click="layersOpen = !layersOpen">레이어</button>
+          <button type="button" class="map-tool-button map-expand-button" data-map-expand :aria-pressed="mapExpanded" @click="toggleMapExpanded()" x-text="mapExpanded ? '닫기' : '크게 보기'" :aria-label="mapExpanded ? '지도 크게 보기 닫기' : '지도 크게 보기'"></button>
+        </div>
+        <div class="map-layer-panel" id="map-layers-panel" x-show="layersOpen" x-cloak>
+          <div class="map-layer-controls" aria-label="표시 레이어">
+            <button type="button" class="map-layer-button" :class="{active:mapDataMode === 'sample' ? mapSampleApartments : mapApartments}" :aria-pressed="mapDataMode === 'sample' ? mapSampleApartments : mapApartments" @click="toggleCurrentApartments()" x-text="mapDataMode === 'sample' ? '예시 단지' : '공동주택'"></button>
+            <button type="button" class="map-layer-button" x-show="mapDataMode === 'real'" :class="{active:mapBuildings}" :aria-pressed="mapBuildings" @click="mapBuildings = !mapBuildings">3D 건물</button>
+            <button type="button" class="map-layer-button" :class="{active:mapTerrain}" :aria-pressed="mapTerrain" @click="toggleTerrain()">지형</button>
+            <button type="button" class="map-layer-button" :class="{active:mapGtx}" :aria-pressed="mapGtx" @click="toggleGtx()">GTX 노선</button>
+          </div>
+          <p class="map-layer-hint" x-show="mapDisplay === '2d' && mapDataMode === 'real'">건물 입체 표시는 3D에서 볼 수 있어요.</p>
+          <details class="map-extra-settings"><summary>추가 설정 · 지역 바로가기</summary><div><label>지도 자료 <select class="map-data-mode" aria-label="지도 자료 선택" x-model="mapDataMode" @change="changeMapDataMode()"><option value="real">실제 자료</option><option value="sample">가상 예시</option></select></label><div class="map-city-shortcuts" x-show="mapDataMode === 'real'"><button type="button" class="sample-focus-button" @click="showRealBuildingArea('seoul')">서울 3D 건물 보기</button><button type="button" class="sample-focus-button" @click="showRealBuildingArea('seongnam')">성남 3D 건물 보기</button><button type="button" class="sample-focus-button" @click="showRealBuildingArea('busan')">부산 3D 건물 보기</button></div><button type="button" class="sample-focus-button" x-show="mapDataMode === 'sample' && (data.apartments || []).some(item => item.sample && item.area === area)" @click="showSampleArea()">예시 단지 보기</button></div></details>
+        </div>
+        <div class="map-action-row"><button type="button" class="map-walk-button" :class="{active:walkActive}" :aria-pressed="walkActive" @click="toggleWalk()">보행 경사</button><span x-show="mapDisplay === '3d'">드래그 이동 · 오른쪽 드래그 회전</span><span x-show="mapDisplay === '2d'">드래그 이동 · 두 손가락 확대</span></div>
+        <div class="focus-bar" x-show="selectedGu"><span><b x-text="data.regions[selectedGu]?.name"></b> · <span x-text="`${focusDongs.length}개 읍·면·동`"></span></span><button class="text-link" @click="openRegion(selectedGu)" x-text="data.regions[selectedGu]?.name.endsWith('구') ? '구 전체 정보' : '시·군 전체 정보'"></button><button class="focus-close" aria-label="지역 선택 해제" @click="clearFocus()">×</button></div>
+        <div class="map-wrap" id="mapWrap"><div class="building-zoom-prompt" x-show="mapDisplay === '3d' && mapDataMode === 'real' && (buildingStatus?.status === 'zoom' || !mapBuildings)" x-cloak><div><b x-text="mapBuildings ? '건물은 가까이 확대하면 보여요' : '3D 건물 레이어가 꺼져 있어요'"></b><span x-text="mapBuildings ? '현재 지도 중심을 유지한 채 건물을 볼 수 있는 크기로 확대합니다.' : '건물 레이어를 켜고 현재 위치의 건물을 살펴보세요.'"></span></div><button type="button" @click="showCurrentBuildings()" x-text="mapBuildings ? '이 위치 건물 보기' : '3D 건물 켜기'"></button></div><div class="map-surface" x-show="mapDisplay === '2d'" x-ref="mapSurface" x-html="mapMarkup" @error.capture="onMapImageError($event)" @click.capture="onWalkMapClick($event)" @click="onMapClick($event)" @keydown.enter.prevent="onMapClick($event)" @keydown.space.prevent="onMapClick($event)" @pointerdown="onMapPointerDown($event)" @pointermove="onMapPointerMove($event)" @pointerup="onMapPointerUp($event)" @pointercancel="onMapPointerCancel($event)" @lostpointercapture="onMapPointerCancel($event)" @wheel.prevent="onMapWheel($event)"></div><canvas class="terrain-overlay" x-ref="terrainCanvas" x-show="mapDisplay === '2d' && mapTerrain && mapDataMode === 'real'" aria-hidden="true"></canvas><svg class="walk-overlay" x-show="mapDisplay === '2d' && walkActive && mapView" :viewBox="walkViewBox()" aria-hidden="true"><polyline x-show="walkResult?.coordinates?.length" :points="walkLinePoints()" class="walk-line"/><circle x-show="walkStart" :cx="walkStartXY()[0]" :cy="walkStartXY()[1]" :r="walkMarkerRadius()" class="walk-start"/><circle x-show="walkEnd" :cx="walkEndXY()[0]" :cy="walkEndXY()[1]" :r="walkMarkerRadius()" class="walk-end"/></svg><div class="scene-3d" x-show="mapDisplay === '3d'" x-ref="scene3d" :aria-label="mapDataMode === 'real' ? '실제 지형 3D 지도' : '가상 예시 3D 지도'"></div><div class="zoom-controls" aria-label="지도 조작"><button type="button" @click.stop="mapDisplay === '3d' ? sceneZoomIn() : zoomIn()" aria-label="확대">+</button><button type="button" @click.stop="mapDisplay === '3d' ? sceneZoomOut() : zoomOut()" aria-label="축소">−</button><button type="button" @click.stop="focusSelectedMap()" aria-label="선택 지역으로 이동" title="선택 지역으로 이동">⌖</button><button type="button" x-show="mapDisplay === '3d'" @click.stop="resetSceneView('north')" aria-label="북쪽으로 보기" title="북쪽으로 보기">N</button><button type="button" x-show="mapDisplay === '3d'" @click.stop="resetSceneView()" aria-label="3D 시점 초기화" title="3D 시점 초기화">⟲</button></div></div>
+        <p class="map-sample-notice" x-show="mapDataMode === 'sample' && (mapDisplay === '3d' || mapSampleApartments || mapTerrain)">가상의 단지·건물·지형 예시입니다. 실제 위치나 경사가 아닙니다.</p>
+        <p class="map-status-line" x-show="mapDisplay === '3d' && mapDataMode === 'real' && mapBuildings" :class="{'map-status-error':buildingStatus?.status === 'error'}" x-text="buildingStatus?.message || '건물 자료 확인 중'" role="status"></p>
+        <div class="map-legend-stack">
+          <div class="legend map-score-legend"><span x-text="mapLegend.lo"></span><span class="swatches"><template x-for="(color, i) in mapLegend.swatches" :key="i"><i :style="`background:${color}`"></i></template></span><span x-text="mapLegend.hi"></span><span x-text="metric === 'price' ? '· 회색: 결측·표본 부족' : '· 회색: 데이터 없음'"></span></div>
+          <div class="gtx-map-legend" x-show="mapGtx" aria-label="GTX 노선 색상 범례"><b class="gtx-legend-title">GTX</b><div class="gtx-legend-routes"><template x-for="route in data.routes" :key="route.id"><span class="gtx-legend-route"><i :style="`background:${route.color}`" aria-hidden="true"></i><span x-text="route.name.replace('GTX-', '')"></span><small x-show="!route.stations.some(station => Array.isArray(station.coordinate))" title="역 좌표 자료 없음">미표시</small></span></template></div></div>
+        </div>
+        <p class="map-source-credit" x-show="mapDisplay === '3d' && mapDataMode === 'real' && mapBuildings"><a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">© OpenStreetMap 기여자 · ODbL</a><span x-show="buildingStatus?.vworldCount"> · 건물: 국토교통부 브이월드</span></p>
+        <p class="map-source-credit" x-show="mapDataMode === 'real' && mapTerrain">고도: <a href="https://registry.opendata.aws/terrain-tiles/" target="_blank" rel="noopener noreferrer">Terrain Tiles · USGS SRTM/GMTED2010</a></p>
+        <details class="map-data-details"><summary>자료·범례 자세히</summary><div class="map-data-detail-body">
+        <p class="terrain-notice" x-show="mapDataMode === 'real' && mapApartments">공동주택 대표 좌표: 서울시·하남시·대구 달서구·광주 광산구 공개자료. 원천 행의 단위와 위치 정확도·실제 출입구는 확인되지 않은 경우가 있습니다.</p>
+        <p class="terrain-notice" x-show="mapDisplay === '3d' && mapDataMode === 'real' && mapBuildings"><span class="building-key"><i style="background:#e6d3b5"></i>OSM 기재 높이 <i style="background:#b8c8d7"></i>층수 × 3m 추정 <i style="background:#b7bec4"></i>높이 미상 외곽</span><br><a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">© OpenStreetMap 기여자 · ODbL</a>. 높이 미상은 평면 외곽이며 자료에 없는 건물은 나타나지 않습니다. <span x-show="buildingStatus?.vworldCount">건물: 국토교통부 브이월드 도로명주소건물 · 동일 건물 추정 시 OSM 중복 완화.</span></p>
+        <p class="terrain-notice" x-show="mapDataMode === 'real' && mapTerrain">고도: <a href="https://registry.opendata.aws/terrain-tiles/" target="_blank" rel="noopener noreferrer">Terrain Tiles / Mapzen · USGS SRTM/GMTED2010 등</a>. 저해상도 추정 지형이며 계단·축대·교량을 세밀하게 나타내지 못합니다.</p>
+        <p class="terrain-notice" x-show="mapBaseProvider === 'vworld' && mapDataMode === 'real'">배경지도: 국토교통부 브이월드 · 로컬 개발키 사용</p>        <p class="terrain-notice" x-text="mapLegend.note"></p><p class="terrain-notice" x-show="mapGtx">GTX는 역 위치를 연결한 개략도입니다. 실선은 운행, 점선은 운행이 확인되지 않은 구간입니다. 기존 환승역의 참고 위치를 포함하며 좌표가 없는 역은 지도에 표시하지 않습니다. 역을 누르면 출처를 확인할 수 있습니다.</p>
+        </div></details>
+        <p class="map-sample-notice map-error" x-show="mapBaseError" x-text="mapBaseError"></p><p class="map-sample-notice map-error" x-show="vworldExpiryNotice" x-text="vworldExpiryNotice"></p>
+        <p class="map-sample-notice map-error" x-show="terrainError" x-text="terrainError"></p><p class="map-sample-notice map-error" x-show="mapDisplay === '3d' && sceneTerrainNotice" x-text="sceneTerrainNotice"></p>
+        <div class="apartment-cluster" x-show="selectedApartmentGroup?.length"><b>겹친 단지 선택</b><template x-for="item in (selectedApartmentGroup || [])" :key="item.id"><button type="button" @click="if (walkActive && walkPicking) setWalkPoint(item.coordinate); else { selectedRegion = null; selectedApartment = item; } selectedApartmentGroup = null" x-text="item.name + (item.sample ? ' · 가상' : '')"></button></template><button type="button" @click="selectedApartmentGroup = null">닫기</button></div>
+        <p class="map-sample-notice map-error" x-show="mapViewError" x-text="mapViewError"></p><p class="map-sample-notice map-error" x-show="mapDisplay === '3d' && sceneAreaNotice" x-text="sceneAreaNotice"></p>
+        <div class="gtx-map-detail" x-show="selectedGtx && mapGtx" x-cloak><header><b x-text="`${selectedGtx?.route.name || ''} ${selectedGtx?.station.name || ''}역`"></b><button type="button" @click="selectedGtx = null" aria-label="역 정보 닫기">×</button></header><p x-text="`상태: ${selectedGtx?.station.status || '미상'} · 기준일: ${selectedGtx?.station.source?.asOf || '미상'}`"></p><p x-text="selectedGtx?.station.coordinateNotice || '표시 위치는 출처 자료를 기준으로 합니다. 연결선은 실제 선로가 아닙니다.'"></p><a :href="selectedGtx?.station.coordinateSource?.url || selectedGtx?.station.source?.url" target="_blank" rel="noopener noreferrer">역 위치 출처</a> · <a :href="selectedGtx?.station.source?.url" target="_blank" rel="noopener noreferrer">운영·계획 출처</a></div>
+      </div>
+      <section class="walk-panel" x-show="walkActive" x-cloak aria-label="보행 경사"><div class="section-heading"><div><b>보행 경사 살펴보기</b><small>서울·하남 시범 보행망 · 단지 좌표는 출입구가 아닙니다</small></div><button type="button" class="walk-close" @click="toggleWalk()" aria-label="보행 경사 닫기">×</button></div><div class="walk-pick-controls"><button type="button" :class="{active:walkPicking === 'start'}" @click="beginWalkPick('start')" x-text="walkStart ? '출발점 다시 선택' : '지도에서 출발점 선택'"></button><button type="button" :class="{active:walkPicking === 'end'}" @click="beginWalkPick('end')" x-text="walkEnd ? '도착점 다시 선택' : '지도에서 도착점 선택'"></button><button type="button" @click="clearWalk()">초기화</button></div><p x-show="walkPicking" class="walk-hint" x-text="walkPicking === 'start' ? '지도에서 출발점을 선택하세요.' : '지도에서 도착점을 선택하세요.'"></p><p class="walk-points" x-show="walkStart || walkEnd" x-text="walkPointsLabel()"></p><div class="walk-actions"><button type="button" class="walk-run" @click="calculateWalk()" :disabled="!walkStart || !walkEnd || walkBusy" x-text="walkBusy ? '경로를 계산하고 있어요' : '보행 경로 계산'"></button></div><p class="walk-error" x-show="walkError" x-text="walkError"></p><template x-if="walkResult"><div class="walk-result"><div class="walk-stats"><span>거리 <b x-text="walkDistanceLabel()"></b></span><span>고도 변화 <b x-text="walkElevationLabel()"></b></span><span>순 고도 변화율 <b x-text="walkSlopeLabel()"></b></span></div><svg x-show="walkProfilePoints()" viewBox="0 0 300 80" class="walk-profile" role="img" aria-label="추정 보행 고도 프로파일"><polyline :points="walkProfilePoints()"/></svg><p x-text="walkSnapLabel()"></p><p>공개 보행망과 저해상도 DEM의 참고 추정치입니다. 실제 출입구·계단·통행 가능 여부는 현장에서 확인하세요.</p><a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">© OpenStreetMap 기여자 · ODbL</a></div></template></section>
+      <details class="map-search-panel" :open="!mapExpanded"><summary>지역·건물 검색 <span>⌕</span></summary><div class="map-search-content">
+      <div class="search-box"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="m16 16 4 4"></path></svg><input type="search" x-model.debounce.150ms="query" placeholder="지역·건물 이름·GTX 역으로 찾기" aria-label="지역 검색"></div>
+      <div class="region-results" x-show="selectedGu && !query">
+        <div class="section-heading"><div><b>지역 상세 보기</b><small>버튼이나 지도에서 구역을 선택하면 상세 정보가 열려요</small></div></div>
+        <div class="region-chips"><button type="button" @click="openRegion(selectedGu)"><span x-text="`${data.regions[selectedGu]?.name || ''} 전체 정보`"></span></button><template x-for="region in focusDongs" :key="region.code"><button type="button" @click="focusDong(region.code); openRegion(region.code)"><span x-text="region.name"></span><b x-show="region.score != null" x-text="`부분 ${region.score}점`"></b></button></template></div>
+      </div>
+      <div x-show="query" class="region-results"><div class="section-heading"><div><b x-text="query ? '검색 결과' : selectedGu ? '동 선택' : '시·구 선택'"></b><small x-text="query ? '지역·건물·역 검색 결과' : selectedGu ? '동을 선택하면 자세히 볼 수 있어요' : '지역을 선택하면 지도에서 확대돼요'"></small></div><span x-text="`${visibleRegions.length + searchExtras.length}개`"></span></div>
+      <div class="region-chips"><template x-for="region in visibleRegions" :key="region.code"><button type="button" @click="selectRegion(region)"><span x-text="query ? region.full : region.name"></span><b x-show="region.kind === 'legal'" x-text="'법정동'"></b><b x-show="region.score != null" x-text="`부분 ${region.score}점`"></b></button></template><template x-for="item in searchExtras" :key="item.key"><button type="button" @click="openSearchExtra(item)"><span x-text="item.label"></span><b x-text="item.type"></b></button></template><p class="empty" x-show="apartmentSearchLoading">공식 단지 검색 중입니다.</p><p class="empty" x-show="apartmentSearchError" x-text="apartmentSearchError"></p><p class="empty" x-show="!visibleRegions.length &amp;&amp; !searchExtras.length &amp;&amp; !apartmentSearchLoading">맞는 결과가 없어요.</p></div></div>
+      </div></details>
+      <p class="foot-note">지역을 누르면 자세한 정보를 볼 수 있어요. 확대하면 길 지도가 표시됩니다. <span x-text="isPublicPreview ? '공개판의 시세·부분 점수는 자료 준비 중입니다.' : '시세는 확보된 공개 계약 자료 기준입니다. 기준 시점과 표본 수를 확인하세요.'"></span> 행정동 경계 출처: 통계청 SGIS, vuski/admdongkor (CC BY 4.0).</p>
+    </section>
+    <div id="secondary-root"></div>
+  </main>
+  <nav class="bottom-tabs" aria-label="메뉴">
+    <button type="button" :class="{on:tab === 'map'}" @click="switchTab('map')"><svg viewBox="0 0 24 24"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2Zm0 0v14m6-12v14"/></svg><span>지도</span></button>
+    <button type="button" :class="{on:tab === 'rank'}" @click="switchTab('rank')"><svg viewBox="0 0 24 24"><path d="M5 20V10m7 10V4m7 16v-7"/></svg><span>랭킹</span></button>
+    <button type="button" :class="{on:tab === 'market'}" @click="switchTab('market')"><svg viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 8-8M15 7h6v6"/></svg><span>시장</span></button>
+    <button type="button" :class="{on:tab === 'gtx'}" @click="switchTab('gtx')"><svg viewBox="0 0 24 24"><path d="M7 3h10a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V6a3 3 0 0 1 3-3Zm-3 8h16M8 21l2-4m6 4-2-4"/></svg><span>GTX</span></button>
+  </nav>
+</div>
+</body>
+</html>
+
+
+

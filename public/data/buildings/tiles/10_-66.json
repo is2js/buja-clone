@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[126.9648053,36.0995048],[126.9650487,36.0994563],[126.9650672,36.0995609],[126.9648222,36.0996057],[126.9648053,36.0995048]]]},"properties":{"id":"way/471991022","name":"송산교회","kind":"church","height":3.0,"heightSource":"levels","levels":1.0,"source":"OpenStreetMap"}}]}

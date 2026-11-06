@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[128.4086172,34.8306545],[128.4089954,34.8305434],[128.4090392,34.8306382],[128.408653,34.8307493],[128.4086172,34.8306545]]]},"properties":{"id":"way/1150374296","name":"106동","kind":"apartments","height":42.0,"heightSource":"levels","levels":14.0,"source":"OpenStreetMap"}}]}

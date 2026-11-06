@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[128.80576,35.4536563],[128.8058263,35.4535589],[128.8059786,35.4536277],[128.8059122,35.4537251],[128.80576,35.4536563]]]},"properties":{"id":"way/1081109316","name":"보아스 체리","kind":"residential","height":15.0,"heightSource":"levels","levels":5.0,"source":"OpenStreetMap"}}]}

@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[127.1912892,36.8194535],[127.1915627,36.8194473],[127.1915737,36.8197574],[127.1913002,36.8197636],[127.1912892,36.8194535]]]},"properties":{"id":"way/570489388","name":"후생관","kind":"yes","height":3.0,"heightSource":"levels","levels":1.0,"source":"OpenStreetMap"}}]}

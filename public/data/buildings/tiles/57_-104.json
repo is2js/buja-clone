@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[127.9096856,35.3266043],[127.9100982,35.3267038],[127.910082,35.3270073],[127.9097161,35.3270106],[127.9096856,35.3266043]]]},"properties":{"id":"way/1423699144","name":"전원주택","kind":"house","height":3.0,"heightSource":"levels","levels":1.0,"source":"OpenStreetMap"}}]}

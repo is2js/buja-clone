@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[127.5082951,36.5899959],[127.5083098,36.589904],[127.5085132,36.5899315],[127.5084936,36.5900202],[127.5082951,36.5899959]]]},"properties":{"id":"way/468930041","name":"상당빌딩","kind":"commercial","height":9.0,"heightSource":"levels","levels":3.0,"source":"OpenStreetMap"}}]}

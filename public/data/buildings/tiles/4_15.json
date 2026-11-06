@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[126.8462762,37.7003358],[126.847027,37.7002348],[126.8470475,37.7003319],[126.8462988,37.7004332],[126.8462762,37.7003358]]]},"properties":{"id":"way/473918926","name":"103동","kind":"apartments","height":40.0,"heightSource":"height","levels":15.0,"source":"OpenStreetMap"}}]}

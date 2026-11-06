@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[128.090803,35.1094864],[128.0909319,35.1092695],[128.0911006,35.1093479],[128.0909846,35.1095569],[128.090803,35.1094864]]]},"properties":{"id":"way/1234494909","name":"단독주택","kind":"house","height":3.0,"heightSource":"levels","levels":1.0,"source":"OpenStreetMap"}}]}

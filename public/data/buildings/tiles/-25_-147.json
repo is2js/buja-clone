@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[126.2654197,34.4794592],[126.265443,34.4792591],[126.2656345,34.4792321],[126.2656742,34.4794092],[126.2654197,34.4794592]]]},"properties":{"id":"way/1533155816","name":"다이소","kind":"retail","height":3.0,"heightSource":"levels","levels":1.0,"source":"OpenStreetMap"}}]}

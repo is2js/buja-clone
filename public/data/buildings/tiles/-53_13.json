@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[125.7021376,37.6645876],[125.7021577,37.6644715],[125.7025163,37.6645104],[125.7024962,37.6646266],[125.7021376,37.6645876]]]},"properties":{"id":"way/470212581","name":"연평면사무소","kind":"public","height":9.0,"heightSource":"levels","levels":3.0,"source":"OpenStreetMap"}}]}

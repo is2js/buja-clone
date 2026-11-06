@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[128.8196893,37.1941472],[128.8199123,37.1941416],[128.8200822,37.1945109],[128.8198592,37.1945701],[128.8196893,37.1941472]]]},"properties":{"id":"way/632081067","name":"마운틴 허브","kind":"yes","height":6.0,"heightSource":"levels","levels":2.0,"source":"OpenStreetMap"}}]}

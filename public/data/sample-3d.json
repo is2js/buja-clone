@@ -1,0 +1,339 @@
+{
+  "source": "가상 샘플",
+  "notice": "건물, 좌표, 지형 및 높이는 가상 예시이며 실제 단지나 경사가 아닙니다.",
+  "asOf": null,
+  "apartments": [
+    {
+      "id": "demo-seoul-01",
+      "name": "가상 종로 아파트",
+      "area": "11",
+      "sample": true,
+      "coordinate": [
+        126.978,
+        37.571
+      ],
+      "households": 360,
+      "year": 2020,
+      "notice": "가상의 단지로 실제 위치·건물·가격이 아닙니다.",
+      "buildings": [
+        {
+          "id": "demo-seoul-01-101",
+          "name": "가상 101동",
+          "offsetMeters": [
+            -55,
+            0
+          ],
+          "widthMeters": 45,
+          "depthMeters": 18,
+          "floors": 15,
+          "heightMeters": 45,
+          "heightKind": "floor-estimate"
+        },
+        {
+          "id": "demo-seoul-01-102",
+          "name": "가상 102동",
+          "offsetMeters": [
+            35,
+            35
+          ],
+          "widthMeters": 42,
+          "depthMeters": 18,
+          "floors": 12,
+          "heightMeters": 36,
+          "heightKind": "floor-estimate"
+        },
+        {
+          "id": "demo-seoul-01-103",
+          "name": "가상 103동",
+          "offsetMeters": [
+            30,
+            -45
+          ],
+          "widthMeters": 38,
+          "depthMeters": 18,
+          "floors": 10,
+          "heightMeters": 30,
+          "heightKind": "floor-estimate"
+        }
+      ]
+    },
+    {
+      "id": "demo-seoul-02",
+      "name": "가상 강남 아파트",
+      "area": "11",
+      "sample": true,
+      "coordinate": [
+        127.045,
+        37.503
+      ],
+      "households": 360,
+      "year": 2020,
+      "notice": "가상의 단지로 실제 위치·건물·가격이 아닙니다.",
+      "buildings": [
+        {
+          "id": "demo-seoul-02-101",
+          "name": "가상 101동",
+          "offsetMeters": [
+            -55,
+            0
+          ],
+          "widthMeters": 45,
+          "depthMeters": 18,
+          "floors": 15,
+          "heightMeters": 45,
+          "heightKind": "floor-estimate"
+        },
+        {
+          "id": "demo-seoul-02-102",
+          "name": "가상 102동",
+          "offsetMeters": [
+            35,
+            35
+          ],
+          "widthMeters": 42,
+          "depthMeters": 18,
+          "floors": 12,
+          "heightMeters": 36,
+          "heightKind": "floor-estimate"
+        },
+        {
+          "id": "demo-seoul-02-103",
+          "name": "가상 103동",
+          "offsetMeters": [
+            30,
+            -45
+          ],
+          "widthMeters": 38,
+          "depthMeters": 18,
+          "floors": 10,
+          "heightMeters": 30,
+          "heightKind": "floor-estimate"
+        }
+      ]
+    },
+    {
+      "id": "demo-gyeonggi-01",
+      "name": "가상 분당 아파트",
+      "area": "41",
+      "sample": true,
+      "coordinate": [
+        127.108,
+        37.383
+      ],
+      "households": 360,
+      "year": 2020,
+      "notice": "가상의 단지로 실제 위치·건물·가격이 아닙니다.",
+      "buildings": [
+        {
+          "id": "demo-gyeonggi-01-101",
+          "name": "가상 101동",
+          "offsetMeters": [
+            -55,
+            0
+          ],
+          "widthMeters": 45,
+          "depthMeters": 18,
+          "floors": 15,
+          "heightMeters": 45,
+          "heightKind": "floor-estimate"
+        },
+        {
+          "id": "demo-gyeonggi-01-102",
+          "name": "가상 102동",
+          "offsetMeters": [
+            35,
+            35
+          ],
+          "widthMeters": 42,
+          "depthMeters": 18,
+          "floors": 12,
+          "heightMeters": 36,
+          "heightKind": "floor-estimate"
+        },
+        {
+          "id": "demo-gyeonggi-01-103",
+          "name": "가상 103동",
+          "offsetMeters": [
+            30,
+            -45
+          ],
+          "widthMeters": 38,
+          "depthMeters": 18,
+          "floors": 10,
+          "heightMeters": 30,
+          "heightKind": "floor-estimate"
+        }
+      ]
+    },
+    {
+      "id": "demo-gyeonggi-02",
+      "name": "가상 수원 아파트",
+      "area": "41",
+      "sample": true,
+      "coordinate": [
+        127.03,
+        37.278
+      ],
+      "households": 360,
+      "year": 2020,
+      "notice": "가상의 단지로 실제 위치·건물·가격이 아닙니다.",
+      "buildings": [
+        {
+          "id": "demo-gyeonggi-02-101",
+          "name": "가상 101동",
+          "offsetMeters": [
+            -55,
+            0
+          ],
+          "widthMeters": 45,
+          "depthMeters": 18,
+          "floors": 15,
+          "heightMeters": 45,
+          "heightKind": "floor-estimate"
+        },
+        {
+          "id": "demo-gyeonggi-02-102",
+          "name": "가상 102동",
+          "offsetMeters": [
+            35,
+            35
+          ],
+          "widthMeters": 42,
+          "depthMeters": 18,
+          "floors": 12,
+          "heightMeters": 36,
+          "heightKind": "floor-estimate"
+        },
+        {
+          "id": "demo-gyeonggi-02-103",
+          "name": "가상 103동",
+          "offsetMeters": [
+            30,
+            -45
+          ],
+          "widthMeters": 38,
+          "depthMeters": 18,
+          "floors": 10,
+          "heightMeters": 30,
+          "heightKind": "floor-estimate"
+        }
+      ]
+    },
+    {
+      "id": "demo-incheon-01",
+      "name": "가상 인천 아파트",
+      "area": "28",
+      "sample": true,
+      "coordinate": [
+        126.706,
+        37.455
+      ],
+      "households": 360,
+      "year": 2020,
+      "notice": "가상의 단지로 실제 위치·건물·가격이 아닙니다.",
+      "buildings": [
+        {
+          "id": "demo-incheon-01-101",
+          "name": "가상 101동",
+          "offsetMeters": [
+            -55,
+            0
+          ],
+          "widthMeters": 45,
+          "depthMeters": 18,
+          "floors": 15,
+          "heightMeters": 45,
+          "heightKind": "floor-estimate"
+        },
+        {
+          "id": "demo-incheon-01-102",
+          "name": "가상 102동",
+          "offsetMeters": [
+            35,
+            35
+          ],
+          "widthMeters": 42,
+          "depthMeters": 18,
+          "floors": 12,
+          "heightMeters": 36,
+          "heightKind": "floor-estimate"
+        },
+        {
+          "id": "demo-incheon-01-103",
+          "name": "가상 103동",
+          "offsetMeters": [
+            30,
+            -45
+          ],
+          "widthMeters": 38,
+          "depthMeters": 18,
+          "floors": 10,
+          "heightMeters": 30,
+          "heightKind": "floor-estimate"
+        }
+      ]
+    }
+  ],
+  "terrainHills": [
+    {
+      "id": "hill-demo-seoul-01",
+      "center": [
+        126.978,
+        37.571
+      ],
+      "area": "11",
+      "radiusMeters": 500,
+      "heightMeters": 100,
+      "label": "가상 언덕",
+      "sample": true
+    },
+    {
+      "id": "hill-demo-seoul-02",
+      "center": [
+        127.045,
+        37.503
+      ],
+      "area": "11",
+      "radiusMeters": 500,
+      "heightMeters": 100,
+      "label": "가상 언덕",
+      "sample": true
+    },
+    {
+      "id": "hill-demo-gyeonggi-01",
+      "center": [
+        127.108,
+        37.383
+      ],
+      "area": "41",
+      "radiusMeters": 500,
+      "heightMeters": 100,
+      "label": "가상 언덕",
+      "sample": true
+    },
+    {
+      "id": "hill-demo-gyeonggi-02",
+      "center": [
+        127.03,
+        37.278
+      ],
+      "area": "41",
+      "radiusMeters": 500,
+      "heightMeters": 100,
+      "label": "가상 언덕",
+      "sample": true
+    },
+    {
+      "id": "hill-demo-incheon-01",
+      "center": [
+        126.706,
+        37.455
+      ],
+      "area": "28",
+      "radiusMeters": 500,
+      "heightMeters": 100,
+      "label": "가상 언덕",
+      "sample": true
+    }
+  ]
+}

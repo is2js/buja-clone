@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[126.4898162,37.7505586],[126.4898487,37.7504236],[126.4908854,37.7504364],[126.4908569,37.7505361],[126.4898162,37.7505586]]]},"properties":{"id":"way/480632945","name":"본관","kind":"school","height":12.0,"heightSource":"levels","levels":4.0,"source":"OpenStreetMap"}}]}
