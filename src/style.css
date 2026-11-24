@@ -38,3 +38,7 @@
 .bottom-tabs::before{content:'';position:absolute;z-index:-1;top:-1px;bottom:0;left:50%;width:100vw;transform:translateX(-50%);background:#fff;border-top:1px solid #dfe5ec}
 .bottom-tabs button.on{color:#101a2b}
 @media(max-width:360px){.map-wrap{height:auto}.area-tabs{margin-left:-10px;margin-right:-10px;padding-left:10px;padding-right:10px}}
+
+.brand{align-items:center}
+.tagline{display:flex;flex-direction:column;gap:1px;line-height:1.25}
+.tagline small{font-size:10px;font-weight:500;color:#637487;letter-spacing:0}
